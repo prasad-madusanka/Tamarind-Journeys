@@ -21,10 +21,41 @@ h4,
     margin-bottom: 0;
 }
 
-.about-section {
-    padding-bottom: 50px;
+.title-section {
+    padding-bottom: 60px;
 }
 
-.about-cj-sub-header {
+.about-cj,
+.about-sri-lanka {
+    padding-bottom: 20px;
+    max-width: 54rem;
+}
+
+.about-cj-sub-header,
+.about-sri-lanka-sub-header {
     margin-top: 2vh;
+    text-align: center;
+}
+
+.content-description {
+    text-align: justify;
+}
+
+.content-description-vertical-line-left{
+    border-left: 2.3px solid #3c4859;
+    padding-left: 10px;
+}
+
+.card-about-sri-lanka {
+    margin: 0 auto;
+    border-radius: 0;
+    max-width: 65rem;
+    h4 {
+        margin-bottom: -12px;
+    }
+}
+
+.about-sri-lanka-p-width{
+    text-align: justify;
+    max-width: 32rem;
 }
