@@ -1,0 +1,16 @@
+.brand-title {
+    font-weight: bold;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+.navigation-tab-color{
+    color: #d2cece;
+    transition: 0.3s;
+}
+
+.navigation-tab-color:hover{
+    border-radius: 3px;
+    color: white;
+    background-color: #fffefe04;
+    transition: 0.3s;
+}
