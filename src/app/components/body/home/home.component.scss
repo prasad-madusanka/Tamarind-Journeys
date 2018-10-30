@@ -2,6 +2,14 @@
     bottom: 3rem;
 }
 
+.carousel-title {
+    color: white;
+}
+
+.carousel-content {
+    line-height: 1.5;
+}
+
 h4,
 .h4 {
     font-size: 1.125rem;
@@ -20,37 +28,71 @@ h4,
     padding-bottom: 60px;
 }
 
-.about-cj,
-.about-sri-lanka {
+.content-description-vertical-line-left {
+    border-left: 2.3px solid #3c4859;
+    padding-left: 10px;
+}
+
+.about-cj {
     padding-bottom: 20px;
     max-width: 54rem;
+}
+
+.about-sl {
+    text-align: center;
+}
+
+.card-about-sri-lanka {
+    margin: 0 auto;
+    max-width: 70rem;
+    img {
+        border-radius: 6px;
+    }
+}
+
+.sl-description {
+    text-align: justify;
+    margin: 1rem;
+}
+
+.sec-2 {
+
+    margin-bottom: 2rem;
+
+    .icon,
+    .info-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .info {
+        padding: 14px 0px 32px;
+    }
+    p {
+        text-align: justify;
+        height: 20vh;
+        overflow: auto;
+    }
+    .card {
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+    .col-md-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.info-title {
+    margin-top: 0.7rem;
+    width: 14rem;
+}
+
+.info-placing {
+    padding: 26px 0 30px !important;
 }
 
 .about-cj-sub-header,
 .about-sri-lanka-sub-header {
     margin-top: 2vh;
     text-align: center;
-}
-
-.content-description {
-    text-align: justify;
-}
-
-.content-description-vertical-line-left{
-    border-left: 2.3px solid #3c4859;
-    padding-left: 10px;
-}
-
-.card-about-sri-lanka {
-    margin: 0 auto;
-    border-radius: 0;
-    max-width: 65rem;
-    h4 {
-        margin-bottom: -12px;
-    }
-}
-
-.about-sri-lanka-p-width{
-    text-align: justify;
-    max-width: 32rem;
 }
