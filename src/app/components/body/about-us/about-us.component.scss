@@ -1,0 +1,31 @@
+.about-us {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; // -webkit-filter: grayscale(100%);
+    // /* Safari 6.0 - 9.0 */
+    // filter: grayscale(100%);
+}
+
+.about-header,
+.contact-card {
+    margin-top: 10rem;
+}
+
+.container {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.title {
+    color: white;
+}
+
+.description {
+    color: #dad7d7;
+}
+
+.card-title {
+    span {
+        vertical-align: super;
+    }
+}

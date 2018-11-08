@@ -1,0 +1,118 @@
+<div class="tour-title noselect">
+  <h3>-Trips-</h3>
+  <p>We have organized is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+    scrambled
+    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets
+    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+    including versions of Lorem Ipsum. </p>
+</div>
+
+<div class="search-tours">
+  <div class="form-group bmd-form-group form-size search-input">
+    <label for="search" class="bmd-label-floating">Search Tour</label>
+    <input type="search" class="form-control" aria-label="Search" id="search" [(ngModel)]="searchText">
+
+    <span class="bmd-help">ex: Temple of the Tooth</span>
+
+    <span class="input-group-text input-icon-font">
+      <i class="material-icons">search</i>
+    </span>
+
+  </div>
+</div>
+
+<div class="tours noselect">
+
+  <div class="row">
+    <div class="col-md-4 card-bottom-space" *ngFor="let rw of search()">
+
+      <div class="card">
+        <img class="card-img-top card-image" src="{{rw.img}}" alt="Card image cap" draggable="">
+        <div class="card-body">
+          <span class="card-title">{{rw.title}}</span>
+          <p class="card-text card-body-content">{{rw.descr}}</p>
+        </div>
+
+        <div class="card-footer-icons">
+          <div class="row">
+
+            <div class="col-md-4">
+              <span class="mi-beg">
+                <i class="material-icons mi icon icon-rose">favorite</i>
+                <p>9.6K</p>
+              </span>
+            </div>
+
+            <div class="col-md-4">
+              <span>
+                <i class="material-icons mi icon icon-info">beenhere</i>
+                <p>000</p>
+              </span>
+            </div>
+
+            <div class="col-md-4">
+              <span class="mi-last">
+                <i class="material-icons mi icon icon-primary">photo</i>
+                <p>000</p>
+              </span>
+            </div>
+
+          </div>
+
+          <div class="btn-more-details">
+            <button class="btn btn-success btn-round btn-sm">
+              <i class="material-icons">more</i> <span>&nbsp; More</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 
+<nav aria-label="...">
+  <ul class="pagination justify-content-center pagination-info">
+
+    <li class="page-item disabled">
+      <span class="page-link">Previous</span>
+    </li>
+
+    <li class="page-item active"><a class="page-link" href="#places">1</a></li>
+
+    <li class="page-item active">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+
+    <li class="page-item"><a class="page-link" href="#dexcursions">3</a></li>
+
+    <li class="page-item">
+      <a class="page-link" href="#events">Next</a>
+    </li>
+
+  </ul>
+
+
+  <div class="pagination-content pagination-space">
+    <div class="pagination-pane active" id="places">
+A
+    </div>
+
+    <div class="pagination-pane" id="dexcursions">
+B
+    </div>
+C
+    <div class="pagination-pane" id="events">
+
+    </div>
+  </div>
+
+</nav> -->

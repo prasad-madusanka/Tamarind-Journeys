@@ -1,0 +1,51 @@
+<!-- <video class="video" autoplay>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  Your browser does not support
+</video> -->
+
+<div class="page-container noselect">
+
+  <div class="cover-img" style="background-image: linear-gradient(rgba(4, 4, 4, 0.45), rgba(255, 255, 255, 0.192)), url('/assets/img/tours/tour_1.jpg');">
+    <div class="tour-cover-title">
+      <h4 class="tour-cover-title-text">Explore Beauty in Every Step</h4>
+      <p class="tour-cover-sub-title-text"> - Pick the best trip plan for you - </p>
+    </div>
+  </div>
+
+  <div class="content-container noselect">
+
+    <ul class="nav nav-pills nav-pills-rose justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#places" data-toggle="tab" draggable="false">
+          <i class="material-icons mi-pills">explore</i> &nbsp;<span>Places</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#dexcursions" data-toggle="tab" draggable="false">
+          <i class="material-icons mi-pills">beach_access</i> &nbsp;<span>Day Excursions</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#events" data-toggle="tab" draggable="false">
+          <i class="material-icons mi-pills">event</i> &nbsp;<span>Events</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="tab-content tab-space">
+      <div class="tab-pane active" id="places">
+        <app-places></app-places>
+      </div>
+
+      <div class="tab-pane" id="dexcursions">
+        <app-excursions></app-excursions>
+      </div>
+
+      <div class="tab-pane" id="events">
+        <app-events></app-events>
+      </div>
+    </div>
+
+  </div>
+
+</div>

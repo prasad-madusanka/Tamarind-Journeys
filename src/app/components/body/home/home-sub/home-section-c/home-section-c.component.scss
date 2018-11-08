@@ -1,0 +1,64 @@
+h4,
+.h4 {
+    font-size: 1.125rem;
+    line-height: 3.5em;
+}
+
+.about-sl {
+    text-align: center;
+}
+
+.card-about-sri-lanka {
+    margin: 0 auto;
+    max-width: 55rem;
+    img {
+        border-radius: 6px;
+    }
+}
+
+.sl-description {
+    text-align: justify;
+    margin: 1rem;
+}
+
+.sec-2 {
+    margin-bottom: 2rem;
+    .icon,
+    .info-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .info {
+        padding: 14px 0px 32px;
+    }
+    p {
+        text-align: justify;
+        height: 20vh;
+        overflow: auto;
+    }
+    .card {
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+    .col-md-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.card-background{
+    background-size: cover;
+}
+
+.text-info{
+    color:#00000087 !important;
+}
+
+.card-title{
+    color: #fdfeff !important;
+}
+
+.about-sri-lanka-sub-header {
+    margin-top: 2vh;
+    text-align: center;
+}
