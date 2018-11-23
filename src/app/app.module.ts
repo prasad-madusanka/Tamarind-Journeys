@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AgmCoreModule } from '@agm/core';
+
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { AppRoutingModule } from './app-routing/app-routing.module'
 
@@ -43,9 +46,48 @@ import { AboutUsComponent } from './components/body/about-us/about-us.component'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAebpQM0Oo7SkefxRPYeZ95MHznCVC3Pn0'
+    }),
+    NgCircleProgressModule.forRoot({
+      radius: 55,
+      backgroundPadding: 7,
+      backgroundStrokeWidth: 0,
+      space: -3,
+      outerStrokeWidth: 3,
+      outerStrokeColor: "#808080",
+      innerStrokeWidth: 3,
+      innerStrokeColor: "#e7e8ea",
+      titleColor: "#ffffff",
+      animationDuration: 1000,
+      toFixed: 0,
+      showTitle: true,
+      showUnits: false,
+      showSubtitle:false
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+
+// ,
+// backgroundPadding: 9,
+// radius: 64,
+// ,
+// ,
+// ,
+// outerStrokeWidth: 4,
+// outerStrokeColor: "#808080",
+// innerStrokeColor: "#e7e8ea",
+// innerStrokeWidth: 4,
+// title: [],
+// titleFontSize: "12",
+// subtitleFontSize: "20",
+// imageHeight: 140,
+// animationDuration: 300,

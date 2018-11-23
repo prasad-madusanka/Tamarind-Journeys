@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
+  title: string = 'Cinnamon Journeys Head Office';
+  lat: number = 7.284440;
+  lng: number = 80.637466;
+
   constructor() { }
 
   ngOnInit() {

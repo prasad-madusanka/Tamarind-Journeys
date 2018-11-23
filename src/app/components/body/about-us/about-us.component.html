@@ -1,4 +1,4 @@
-<div class="about-us" style="background-image: url('./assets/img/tours/about.jpg')">
+<div class="about-us" style="background-image: url('/assets/img/tours/about.jpg')">
 
   <div class="container">
     <div class="row">
@@ -91,3 +91,6 @@
   </div>
 
 </div>
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng" [label]="title"></agm-marker>
+</agm-map>
