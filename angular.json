@@ -38,6 +38,7 @@
               "src/assets/js/plugins/nouislider.min.js",
               "src/assets/js/material-kit.js",
               "src/assets/jQuery/animation.js"
+
             ]
           },
           "configurations": {

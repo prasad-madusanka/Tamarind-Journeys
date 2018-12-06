@@ -14,8 +14,9 @@ import { HomeComponent } from './components/body/home/home-main/home.component';
 import { ToursComponent } from './components/body/tours/tours-main/tours.component';
 import { ExcursionsComponent } from './components/body/tours/tours-sub/excursions/excursions.component';
 import { EventsComponent } from './components/body/tours/tours-sub/events/events.component';
-import { GalleryComponent } from './components/body/gallery/gallery.component';
+import { GalleryComponent } from './components/body/gallery/gallery-main/gallery.component';
 import { PlacesComponent } from './components/body/tours/tours-sub/places/places.component';
+import { GalleryModalComponent } from './components/body/gallery/gallery-sub/gallery-modal/gallery-modal.component'
 
 import { HomeSectionAComponent } from './components/body/home/home-sub/home-section-a/home-section-a.component';
 import { HomeSectionBComponent } from './components/body/home/home-sub/home-section-b/home-section-b.component';
@@ -23,6 +24,10 @@ import { HomeSectionCComponent } from './components/body/home/home-sub/home-sect
 import { HomeSectionDComponent } from './components/body/home/home-sub/home-section-d/home-section-d.component';
 import { HomeSectionEComponent } from './components/body/home/home-sub/home-section-e/home-section-e.component';
 import { AboutUsComponent } from './components/body/about-us/about-us.component';
+import { GallerySectionAComponent } from './components/body/gallery/gallery-sub/gallery-section-a/gallery-section-a.component';
+import { GallerySectionBComponent } from './components/body/gallery/gallery-sub/gallery-section-b/gallery-section-b.component';
+import { GallerySectionCComponent } from './components/body/gallery/gallery-sub/gallery-section-c/gallery-section-c.component';
+import { GallerySectionDComponent } from './components/body/gallery/gallery-sub/gallery-section-d/gallery-section-d.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { AboutUsComponent } from './components/body/about-us/about-us.component'
     HomeSectionCComponent,
     HomeSectionDComponent,
     HomeSectionEComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    GallerySectionAComponent,
+    GallerySectionBComponent,
+    GallerySectionCComponent,
+    GallerySectionDComponent,
+    GalleryModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +61,7 @@ import { AboutUsComponent } from './components/body/about-us/about-us.component'
       apiKey: 'AIzaSyAebpQM0Oo7SkefxRPYeZ95MHznCVC3Pn0'
     }),
     NgCircleProgressModule.forRoot({
-      radius: 55,
+      radius: 40,
       backgroundPadding: 7,
       backgroundStrokeWidth: 0,
       space: -3,
@@ -60,11 +70,12 @@ import { AboutUsComponent } from './components/body/about-us/about-us.component'
       innerStrokeWidth: 3,
       innerStrokeColor: "#e7e8ea",
       titleColor: "#ffffff",
+      titleFontSize:"16",
       animationDuration: 1000,
       toFixed: 0,
       showTitle: true,
       showUnits: false,
-      showSubtitle:false
+      showSubtitle: false
     })
   ],
   providers: [],

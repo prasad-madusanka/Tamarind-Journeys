@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  selector: 'app-gallery-section-b',
+  templateUrl: './gallery-section-b.component.html',
+  styleUrls: ['./gallery-section-b.component.scss']
 })
-export class GalleryComponent implements OnInit {
-
+export class GallerySectionBComponent implements OnInit {
 
   round = [{
     "value": "200",
@@ -19,12 +17,6 @@ export class GalleryComponent implements OnInit {
     "value": "300",
     "c1": '#ecd06f',
     "c2": '#ecd06f4d',
-    "title": "Categories"
-  },
-  {
-    "value": "350",
-    "c1": '#3c948b',
-    "c2": '#3c948b4d',
     "title": "Locations"
   }, {
     "value": "110",
@@ -38,41 +30,9 @@ export class GalleryComponent implements OnInit {
     "title": "Viewers"
   }]
 
-
-
-
-
-
   constructor() { }
 
   ngOnInit() {
-    //this.progressValue = 32
   }
 
-
 }
-
-/**
- * 
- * Red
- * #df6c4f
- * #df6c4f4d
- * 
- * Yellow
- * #ecd06f
- * #ecd06f4d
- * 
- * BlueGreen
- * #3c948b
- * #3c948b4d
- * 
- * Blue
- * #1a99aa
- * #1a99aa4d
- * 
- * Green
- * #00FCA3
- * #00fca34d
- * 
- * 
- */

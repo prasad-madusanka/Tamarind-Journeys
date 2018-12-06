@@ -6,7 +6,7 @@ import { Routes, RouterModule, Router } from '@angular/router'
 import { EventsComponent } from '../components/body/tours/tours-sub/events/events.component'
 import { ExcursionsComponent } from '../components/body/tours/tours-sub/excursions/excursions.component'
 import { PlacesComponent } from '../components/body/tours/tours-sub/places/places.component';
-import { GalleryComponent } from '../components/body/gallery/gallery.component'
+import { GalleryComponent } from '../components/body/gallery/gallery-main/gallery.component'
 import { HomeComponent } from '../components/body/home/home-main/home.component'
 import { ToursComponent } from '../components/body/tours/tours-main/tours.component'
 import { AboutUsComponent } from '../components/body/about-us/about-us.component'

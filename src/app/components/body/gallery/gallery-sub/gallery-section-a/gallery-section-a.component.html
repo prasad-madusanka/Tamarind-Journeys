@@ -1,0 +1,31 @@
+<header class="v-header container noselect">
+  <div class="fullscreen-video-wrap">
+
+    <video src="/assets/video/Beach.mp4" autoplay loop muted>
+    </video>
+
+  </div>
+
+
+  <div class="header-overlay"></div>
+
+  <div class="header-content text-md-center  d-none d-md-block">
+    <h1 class="title text-color-white">Gallery</h1>
+    <h5 class="h5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus perferendis necessitatibus
+      numquam amet
+      impedit explicabo? Debitis quasi ullam aperiam!</h5>
+
+    <ul class="row round-progress-bar justify-content-center">
+      <li class="col-md-4" *ngFor="let x of round" style="max-width:10rem;">
+
+        <circle-progress class="noselect" [percent]=x.value [maxPercent]=x.value [outerStrokeColor]=x.c1
+          [innerStrokeColor]=x.c2></circle-progress>
+        <h5 class="h5">{{x.title}}</h5>
+
+      </li>
+    </ul>
+  </div>
+
+
+</header>
+
