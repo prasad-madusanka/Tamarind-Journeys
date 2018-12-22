@@ -29,6 +29,7 @@ import { GallerySectionBComponent } from './components/body/gallery/gallery-sub/
 import { GallerySectionCComponent } from './components/body/gallery/gallery-sub/gallery-section-c/gallery-section-c.component';
 import { GallerySectionDComponent } from './components/body/gallery/gallery-sub/gallery-section-d/gallery-section-d.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +62,7 @@ import { GallerySectionDComponent } from './components/body/gallery/gallery-sub/
       apiKey: 'AIzaSyAebpQM0Oo7SkefxRPYeZ95MHznCVC3Pn0'
     }),
     NgCircleProgressModule.forRoot({
-      radius: 40,
+      radius: 50,
       backgroundPadding: 7,
       backgroundStrokeWidth: 0,
       space: -3,
@@ -70,7 +71,7 @@ import { GallerySectionDComponent } from './components/body/gallery/gallery-sub/
       innerStrokeWidth: 3,
       innerStrokeColor: "#e7e8ea",
       titleColor: "#ffffff",
-      titleFontSize:"16",
+      titleFontSize: "16",
       animationDuration: 1000,
       toFixed: 0,
       showTitle: true,

@@ -16,8 +16,14 @@
     position: absolute;
 }
 
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
 .sec-1 {
-    padding-top: 14rem;
+    padding-top: 1rem;
     max-width: 66rem;
     .h3 {
         font-size: 18px;
@@ -25,15 +31,14 @@
     }
 }
 
-.header-content{
-    padding-top: 4rem;
+.header-content {
+    padding-top: 17rem;
 }
 
 .round-progress-bar {
     list-style-type: none;
-    font-weight: 900; 
-
-    h5{
+    font-weight: 900;
+    h5 {
         margin-top: -8px;
         font-size: 14px;
     }
