@@ -1,0 +1,92 @@
+<div class="tour-title noselect">
+  <h3>topic name</h3>
+  <p>We have organized is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+    scrambled
+    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets
+    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+    including versions of Lorem Ipsum. </p>
+</div>
+
+<div class="search-excursions">
+
+  <form autocomplete="off">
+    <div class="form-group bmd-form-group form-size search-input">
+      <label for="search" class="bmd-label-floating">Search Tour</label>
+      <input type="search" class="form-control" aria-label="Search" id="search" [(ngModel)]="searchText" name="search">
+
+      <span class="bmd-help">ex: Temple of the Tooth</span>
+
+      <span class="input-group-text input-icon-font">
+        <i class="material-icons">search</i>
+      </span>
+
+    </div>
+  </form>
+
+</div>
+
+<div class="tours noselect">
+
+  <div class="row">
+    <div class="col-md-4 card-bottom-space" *ngFor="let item of search()">
+
+      <div class="card">
+        <!-- <img class="card-img-top card-image" [src]=rw.img alt="Card image cap" draggable="false"> -->
+        <div class="card-img-top card-image" [style.background-image]="'url(' + item.img + ')'"></div>
+        <div class="card-body">
+
+          <div>
+            <span class="card-title">{{item.title}}</span>
+          </div>
+
+          <div class="description-container">
+            <p class="card-text card-body-content">{{item.shortDescription}}</p>
+          </div>
+
+        </div>
+
+        <div class="card-footer-icons">
+
+          <div class="btn-more-details">
+            <button class="btn btn-success btn-round btn-sm" data-toggle="modal" data-target="#modalExcursions"
+            (click)="excursionsDetails(item)">
+              <i class="material-icons">more</i> <span>&nbsp; More</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="modalExcursions" tabindex="-1" role="dialog" aria-labelledby="modalExcursionsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="title modal-title" id="modalExcursionsLabel">{{items.title}}</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+  
+        <div class="modal-body">
+  
+          <div class="complete-description">
+            <p>{{items.completeDescription}}</p>
+          </div>
+  
+        </div>
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

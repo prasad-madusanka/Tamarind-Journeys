@@ -62,3 +62,17 @@ h4,
     margin-top: 2vh;
     text-align: center;
 }
+
+.card-background-overlay{
+    border-radius: 7px;
+    background-color: #0000007a;
+    
+    p{
+        color: white;
+    }
+
+}
+
+.card-from-top{
+    margin-top: 1rem !important;
+}

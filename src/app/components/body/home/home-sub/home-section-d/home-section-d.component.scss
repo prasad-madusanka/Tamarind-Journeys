@@ -1,16 +1,50 @@
-h4,
-.h4 {
-    font-size: 1.125rem;
-    line-height: 3.5em;
+// h4,
+// .h4 {
+//     font-size: 1.125rem;
+//     line-height: 3.5em;
+// }
+// .info-title {
+//     margin-top: 0.7rem;
+//     width: 14rem;
+// }
+// .info-placing {
+//     padding: 26px 0 30px !important;
+// }
+.com-d {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
-
-.info-title {
-    margin-top: 0.7rem;
-    width: 14rem;
+.client-description {
+    padding-top: 1.5rem;
+    padding-bottom: 1px;
+    max-width: 16rem;
+    margin: 0 auto;
 }
 
-.info-placing {
-    padding: 26px 0 30px !important;
+.client-image {
+    display: grid;
+    display: -ms-grid;
+    img {
+        border-radius: 50px;
+        width: 6rem;
+    }
 }
 
+.client-name {
+    padding-bottom: 1rem;
+}
+
+.card-height-low {
+    height: 22rem;
+    overflow-y: auto;
+}
+
+.card-height-high {
+    height: 24rem;
+    overflow-y: auto;
+}
+
+.card-from-top{
+    margin-top: 1rem;
+}

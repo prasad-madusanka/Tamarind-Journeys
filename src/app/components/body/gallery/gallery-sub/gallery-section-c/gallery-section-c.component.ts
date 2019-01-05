@@ -16,7 +16,7 @@ export class GallerySectionCComponent implements OnInit {
   tabSubtitles: { quoteCategoty: string; quoteDescription: string; quoteAuthor: string; }[];
   quoteDescription: String
   quoteAuthor: String
-  quoteCategoty: String
+  quoteCategory: String
 
   constructor() { }
 
@@ -64,18 +64,18 @@ export class GallerySectionCComponent implements OnInit {
       }
     ]
 
-    this.quoteCategoty = this.tabSubtitles[0].quoteCategoty
+    this.quoteCategory = this.tabSubtitles[0].quoteCategoty
     this.quoteDescription = this.tabSubtitles[0].quoteDescription
     this.quoteAuthor = this.tabSubtitles[0].quoteAuthor
 
   }
 
   selectImageCategory(imgCategory) {
-    this.quoteCategoty = this.tabSubtitles[imgCategory].quoteCategoty
+    this.quoteCategory = this.tabSubtitles[imgCategory].quoteCategoty
     this.quoteDescription = this.tabSubtitles[imgCategory].quoteDescription
     this.quoteAuthor = this.tabSubtitles[imgCategory].quoteAuthor
 
-    this.loadImages(this.quoteCategoty);
+    this.loadImages(this.quoteCategory);
   }
 
 

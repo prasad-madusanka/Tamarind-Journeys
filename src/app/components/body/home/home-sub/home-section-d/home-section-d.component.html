@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
 
   <div class="col-md-6">
     <h2 class="title">Some heafing</h2>
@@ -31,6 +31,59 @@
     <div class="card bg-dark text-white">
       <img class="card-img" src="./assets/img/tours/tour_4.jpg" alt="Card image">
     </div>
+  </div>
+
+</div> -->
+
+
+<div class="com-d">
+
+  <div class="d-header">
+    <h3 class="title text-center">What clients say about us</h3>
+  </div>
+
+  <div class="d-body">
+
+    <div class="row">
+
+      <div class="col-md-4 ml-auto" *ngFor="let item of clientQuotes">
+
+        <div [ngClass]=item.midCard>
+          <div class="card-body">
+
+            <div class="quote-icon text-center">
+              <i class="material-icons">format_quote</i>
+            </div>
+
+            <div class="client-image justify-content-center">
+              <img [src]=item.clientImage alt="" draggable="false">
+            </div>
+
+            <div class="client-description">
+              <p class="text-justify">
+                <i>
+                  "{{item.description}}"
+                </i>
+              </p>
+            </div>
+
+
+
+            <div class="client-name text-transform-none text-center">
+              <h6 class="card-title">
+                <a href="">
+                  &ndash; {{item.clientName}} &ndash;
+                </a>
+              </h6>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
 </div>

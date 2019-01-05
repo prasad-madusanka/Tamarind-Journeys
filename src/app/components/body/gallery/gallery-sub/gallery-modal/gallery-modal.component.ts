@@ -23,7 +23,7 @@ export class GalleryModalComponent implements OnInit {
 
   ngOnInit() {
 
-    //this.handleModalScrolling();
+    this.handleModalScrolling();
 
 
     // if (this.title == environment.TAG_WILDLIFE) {

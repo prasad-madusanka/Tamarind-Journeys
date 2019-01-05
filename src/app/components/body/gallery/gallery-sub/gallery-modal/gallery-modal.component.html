@@ -16,12 +16,12 @@
             favorite
           </i><span class="text-transform-none">2000</span></button>
 
-        <a href="{{title}}" download>
+        <!-- <a href="{{title}}" download>
           <button class="btn btn-success btn-location-take btn-link">
             <i class="material-icons">
               arrow_downward
             </i></button>
-        </a>
+        </a> -->
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -67,22 +67,22 @@
 
 
 <div class="modal fade" id="modalImageInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <div>
+          <div class="noselect">
             <p class="text-dark h5 modal-title-info" id="exampleModalLabel">Info</p>
             <p class="text-dark h5 modal-title-pubdate" id="exampleModalLabel">Published on December 2, 2018</p>
           </div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close noselect" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body text-dark">
+        <div class="modal-body text-dark noselect">
   
           <div class="row text-center">
   
-            <div class="col-md-4">
+            <div class="col-md-6">
               <p class="h6 margin-bt-none text-transform-none"><i class="material-icons">
                   visibility
                 </i> <span class="detail-a-properties">&nbsp; Views</span>
@@ -90,16 +90,16 @@
               <p class="h6 detail-a-properties-values text-transform-none">34213432</p>
             </div>
   
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
               <p class="h6 margin-bt-none text-transform-none"><i class="material-icons">
                   arrow_downward
                 </i> <span class="detail-a-properties">&nbsp; Downloads</span>
               </p>
-              <p class="h6 detail-a-properties-values text-transform-none">245235432</p>
-            </div>
+              <p class="h6 detail-a-properties-values text-transform-none">disabled</p>
+            </div> -->
   
   
-            <div class="col-md-4">
+            <div class="col-md-6">
               <p class="h6 margin-bt-none text-transform-none"><i class="material-icons">
                   favorite
                 </i> <span class="detail-a-properties">&nbsp; Likes</span>

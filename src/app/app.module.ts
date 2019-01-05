@@ -28,6 +28,7 @@ import { GallerySectionAComponent } from './components/body/gallery/gallery-sub/
 import { GallerySectionBComponent } from './components/body/gallery/gallery-sub/gallery-section-b/gallery-section-b.component';
 import { GallerySectionCComponent } from './components/body/gallery/gallery-sub/gallery-section-c/gallery-section-c.component';
 import { GallerySectionDComponent } from './components/body/gallery/gallery-sub/gallery-section-d/gallery-section-d.component';
+import { TourTypesComponent } from './components/body/tours/tours-sub/tour-types/tour-types.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { GallerySectionDComponent } from './components/body/gallery/gallery-sub/
     GallerySectionCComponent,
     GallerySectionDComponent,
     GalleryModalComponent,
+    TourTypesComponent,
   ],
   imports: [
     BrowserModule,

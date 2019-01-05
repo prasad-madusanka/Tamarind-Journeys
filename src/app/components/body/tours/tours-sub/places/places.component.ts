@@ -8,29 +8,40 @@ import { Component, OnInit } from '@angular/core';
 export class PlacesComponent implements OnInit {
 
   searchText: String
-  data: { "img": string; "title": string; "descr": string; }[];
+  data: { "img": string; "title": string; "shortDescription": string; "completeDescription": string; }[];
+  items: { "img": string; "title": string; "shortDescription": string; "completeDescription": string; }
 
   constructor() { }
 
   ngOnInit() {
     this.data = [
       {
-        img: "https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80",
-        title: "Trip A",
-        descr: "Some trip apple need quick example text to build on the card title and make up the bulk of the card's content."
+        img: "/assets/img/Gallery/People/People_10.jpg",
+        title: "Adventure Tours",
+        shortDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in ",
+        completeDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in "
       },
       {
-        img: "https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80",
-        title: "Trip B",
-        descr: "Some trip mango quick example text to build on the card title and make up the bulk of the card's content."
+        img: "/assets/img/Gallery/Nature/7.jpg",
+        title: "Agro Tourism",
+        shortDescription: "Cinnamon Journeys is dedicated to supply you a practical experience related to different cultures",
+        completeDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in "
       },
       {
-        img: "https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80",
-        title: "Trip C",
-        descr: "Banan is good for health"
+        img: "/assets/img/Gallery/Nature/Nature_13.jpg",
+        title: "Nature Trails",
+        shortDescription: "Sri Lanka is a beautiful country which is full bio diversity and surrounded by blue sea.",
+        completeDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in "
+      },
+      {
+        img: "/assets/img/Gallery/Cities/Cities_2.jpg",
+        title: "Sri Lankan Highlights",
+        shortDescription: "Join with us to have the experience by visiting ancient kingdoms in ancient historical Sri Lanka, Join with us to have the experience by visiting ancient kingdoms in ancient historical Sri Lanka ",
+        completeDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in "
       }
     ]
 
+    this.items = this.data[0]
 
   }
 
@@ -38,7 +49,7 @@ export class PlacesComponent implements OnInit {
   filterIt(arr, searchKey) {
     return arr.filter((obj) => {
       return Object.keys(obj).some((key) => {
-        return obj[key].includes(searchKey)
+        return obj[key].toLowerCase().includes(searchKey)
       })
     })
   }
@@ -48,8 +59,12 @@ export class PlacesComponent implements OnInit {
       return this.data;
     }
     if (this.searchText) {
-      return this.filterIt(this.data, this.searchText);
+      return this.filterIt(this.data, this.searchText.toLowerCase());
     }
+  }
+
+  tourDetails(item) {
+    this.items = item
   }
 
 }
