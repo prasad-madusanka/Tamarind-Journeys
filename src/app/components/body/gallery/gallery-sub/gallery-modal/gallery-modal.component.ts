@@ -1,21 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { environment } from 'src/environments/environment';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
 declare var $: any;
 
 @Component({
   selector: 'app-gallery-modal',
   templateUrl: './gallery-modal.component.html',
-  styleUrls: ['./gallery-modal.component.scss']
+  styleUrls: ['./gallery-modal.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GalleryModalComponent implements OnInit {
 
-   @Input() title: string;
-  // currentModalPreview: { id: string, path: string; imageName: string; reactions: string; views: string; downloads: string; uploader: string; info: { cameraMake: string; cameraModel: string; focalLength: string; iso: string; shutterSpeed: string; aperture: string; dimensions: string; }; };
-
-  // myImages: any
-
-
+  @Input() obj: any
 
   constructor() {
 
@@ -24,32 +19,6 @@ export class GalleryModalComponent implements OnInit {
   ngOnInit() {
 
     this.handleModalScrolling();
-
-
-    // if (this.title == environment.TAG_WILDLIFE) {
-    //   this.myImages = environment.Wild_Life
-    // }
-
-
-    // if (this.title == environment.TAG_NATURE) {
-    //   this.myImages = environment.Nature
-    // }
-
-
-    // if (this.title == environment.TAG_CULTURE) {
-    //   this.myImages = environment.culture
-    // }
-
-
-    // if (this.title == environment.TAG_PEOPLE) {
-    //   this.myImages = environment.people
-    // }
-
-
-    // if (this.title == environment.TAG_CITIES) {
-    //   this.myImages = environment.cities
-    // }
-
 
 
     // this.currentModalPreview = {

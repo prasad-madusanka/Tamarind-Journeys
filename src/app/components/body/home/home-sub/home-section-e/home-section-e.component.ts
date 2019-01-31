@@ -7,64 +7,68 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeSectionEComponent implements OnInit {
 
-  reasonToTravelWithUs: { matIcon: string; title: string; description: string; colorClass: string }[]
+  reasonToTravelWithUs: { icon: string; title: string; content: string; style: string }[]
 
   constructor() { }
 
   ngOnInit() {
 
+    this.initUI()
+
+  }
+
+  initUI() {
     this.reasonToTravelWithUs = [
 
       {
-        matIcon: "list",
+        icon: "list",
         title: "Customize Tours",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-info"
+        content: "We are ready to give away our fullest cooperation to come true your dream destiny.",
+        style: "icon-info"
       }, {
-        matIcon: "rowing",
+        icon: "rowing",
         title: "Authentic Experience",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-warning"
+        content: "Tour packages are made to have complete and lovely experiences for you all.",
+        style: "icon-warning"
       }, {
-        matIcon: "access_time",
+        icon: "access_time",
         title: "24/7 Travel Team",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-primary"
+        content: "We are willingly dedicated to you all to satisfy our clients any time as your requirements.",
+        style: "icon-primary"
       }, {
-        matIcon: "verified_user",
+        icon: "verified_user",
         title: "Assurances",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-success"
+        content: "We are bound to certify to supply assurance and protectiveness during your traveling time.",
+        style: "icon-success"
       }, {
-        matIcon: "attach_money",
+        icon: "attach_money",
         title: "Value for Money",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-rose"
+        content: "We have accountability on your money that is spending and the time you are. It won’t go in vein.",
+        style: "icon-rose"
       }, {
-        matIcon: "supervisor_account",
+        icon: "supervisor_account",
         title: "Experience Guide Fleets",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-info"
+        content: "The guide fleets those who are working in our team are the most experienced & well knowledgeable people.",
+        style: "icon-info"
       }, {
-        matIcon: "fiber_new",
+        icon: "fiber_new",
         title: "Newly Experience",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-warning"
+        content: "Sri Lanka is a country which full of unforgettable traveling destinations. We have included where places in our packages to experience the newest things.",
+        style: "icon-warning"
       }, {
-        matIcon: "local_offer",
+        icon: "local_offer",
         title: "Festival Offers",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-success"
+        content: "Sri Lanka is a country with different kind Of festivals. Therefore we can give you many more benefits from these.",
+        style: "icon-success"
       }, {
-        matIcon: "card_giftcard",
+        icon: "card_giftcard",
         title: "Free Extras on Arrival",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-        colorClass: "icon-rose"
+        content: "Always we are there to supply you a free airport service on your arrival.",
+        style: "icon-rose"
       }
 
 
     ]
-
   }
 
 }

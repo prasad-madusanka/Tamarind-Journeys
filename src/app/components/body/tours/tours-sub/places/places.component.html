@@ -1,4 +1,4 @@
-<div class="tour-title noselect">
+<!-- <div class="tour-title noselect">
   <h3>topic name</h3>
   <p>We have organized is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -8,7 +8,7 @@
     sheets
     containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
     including versions of Lorem Ipsum. </p>
-</div>
+</div> -->
 
 <div class="search-tours">
 
@@ -35,13 +35,13 @@
 
       <div class="card">
         <!-- <img class="card-img-top card-image" [src]=rw.img alt="Card image cap" draggable="false"> -->
-        <div class="card-img-top card-image" [style.background-image]="'url(' + item.img + ')'"></div>
+        <div class="card-img-top card-image" [style.background-image]="'url(' + item.src + ')'"></div>
         <div class="card-body">
           <div>
             <span class="card-title">{{item.title}}</span>
           </div>
           <div class="description-container">
-            <p class="card-text card-body-content">{{item.shortDescription}}</p>
+            <p class="card-text card-body-content">{{item.subDescription}}</p>
           </div>
         </div>
 
@@ -65,7 +65,7 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="title modal-title" id="modalPlacesLabel">{{items.title}}</h4>
+        <h4 class="title modal-title" id="modalPlacesLabel">{{selectedItem.title}}</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -74,7 +74,7 @@
       <div class="modal-body">
 
         <div class="complete-description">
-          <p>{{items.completeDescription}}</p>
+          <p>{{selectedItem.mainDescription}}</p>
         </div>
 
       </div>

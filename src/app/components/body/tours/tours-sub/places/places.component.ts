@@ -8,40 +8,40 @@ import { Component, OnInit } from '@angular/core';
 export class PlacesComponent implements OnInit {
 
   searchText: String
-  data: { "img": string; "title": string; "shortDescription": string; "completeDescription": string; }[];
-  items: { "img": string; "title": string; "shortDescription": string; "completeDescription": string; }
+  tourCategories: { "src": string; "title": string; "subDescription": string; "mainDescription": string; }[];
+  selectedItem: { "src": string; "title": string; "subDescription": string; "mainDescription": string; }
 
   constructor() { }
 
   ngOnInit() {
-    this.data = [
+    this.tourCategories = [
       {
-        img: "/assets/img/Gallery/People/People_10.jpg",
+        src: "/assets/img/site-images/JPEG/adventure_tours.jpg",
         title: "Adventure Tours",
-        shortDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in ",
-        completeDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in "
+        subDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in ",
+        mainDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in Asian national parks, travelling in the train across beautiful tea estates in upcountry, hiking, trekking & camping experience in mountain rangers that belongs to the world Heritage site of UNESCO. Experience the bicycle rides across Blue Mountains and white water rafting and canyoning in cool clean water."
       },
       {
-        img: "/assets/img/Gallery/Nature/7.jpg",
+        src: "/assets/img/site-images/JPEG/agro_tours.jpg",
         title: "Agro Tourism",
-        shortDescription: "Cinnamon Journeys is dedicated to supply you a practical experience related to different cultures",
-        completeDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in "
+        subDescription: "Cinnamon Journeys is dedicated to supply you a practical experience related to different cultures",
+        mainDescription: "Cinnamon Journeys is dedicated to supply you a practical experience related to different cultures, life styles and agricultural methods in various areas in our agricultural country in Asia."
       },
       {
-        img: "/assets/img/Gallery/Nature/Nature_13.jpg",
+        src: "/assets/img/site-images/JPEG/nature_tours.jpg",
         title: "Nature Trails",
-        shortDescription: "Sri Lanka is a beautiful country which is full bio diversity and surrounded by blue sea.",
-        completeDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in "
+        subDescription: "Sri Lanka is a beautiful country which is full bio diversity and surrounded by blue sea.",
+        mainDescription: "Sri Lanka is a beautiful country which is full bio diversity and surrounded by blue sea. There we can find many species of flora and fauna which adapted to different environment systems. Join your hands with Cinnamon Journeys to make you happy and wonderful while travelling in mountains, watching waterfalls, walking in evergreen forests and to get wild life experience."
       },
       {
-        img: "/assets/img/Gallery/Cities/Cities_2.jpg",
+        src: "/assets/img/site-images/JPEG/srilankan_highlights.jpg",
         title: "Sri Lankan Highlights",
-        shortDescription: "Join with us to have the experience by visiting ancient kingdoms in ancient historical Sri Lanka, Join with us to have the experience by visiting ancient kingdoms in ancient historical Sri Lanka ",
-        completeDescription: "You can feel the experience with Surfing in the beautiful blue sea, whale watching, travelling in "
+        subDescription: "Join with us to have the experience by visiting ancient kingdoms in ancient historical Sri Lanka, Join with us to have the experience by visiting ancient kingdoms in ancient historical Sri Lanka ",
+        mainDescription: "Join with us to have the experience by visiting ancient kingdoms in ancient historical Sri Lanka that has embarking history more than 2500 years. We give you the chance to visit Sri Lanka life style in varies areas."
       }
     ]
 
-    this.items = this.data[0]
+    this.selectedItem = this.tourCategories[0]
 
   }
 
@@ -56,15 +56,15 @@ export class PlacesComponent implements OnInit {
 
   search() {
     if (!this.searchText) {
-      return this.data;
+      return this.tourCategories;
     }
     if (this.searchText) {
-      return this.filterIt(this.data, this.searchText.toLowerCase());
+      return this.filterIt(this.tourCategories, this.searchText.toLowerCase());
     }
   }
 
   tourDetails(item) {
-    this.items = item
+    this.selectedItem = item
   }
 
 }

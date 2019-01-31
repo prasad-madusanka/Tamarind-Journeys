@@ -1,17 +1,24 @@
 <div class="page-container noselect ">
 
-  <div class="cover-img" style="background-image: linear-gradient(rgba(4, 4, 4, 0.45), rgba(255, 255, 255, 0.192)), url('/assets/img/tours/tour_1.jpg');">
+  <div class="cover-img" [ngStyle]="{'background-image': 'linear-gradient(rgba(4, 4, 4, 0.45), rgba(255, 255, 255, 0.192)), url(' + cover.src + ')'}">
     <div class="tour-cover-title">
-      <h4 class="tour-cover-title-text">Explore Beauty in Every Step</h4>
-      <p class="tour-cover-sub-title-text"> - Pick the best trip plan for you - </p>
+      <h4 class="tour-cover-title-text">{{cover.title}}</h4>
+      <p class="tour-cover-sub-title-text"> - {{cover.subtitle}} - </p>
     </div>
   </div>
-
+  <!-- , -->
   <app-tour-types></app-tour-types>
+
+
+
+  <div class="tour-title noselect">
+    <h3>{{tours.title}}</h3>
+    <p>{{tours.content}}</p>
+  </div>
 
   <div class="content-container noselect">
 
-    <ul class="nav nav-pills nav-pills-rose justify-content-center">
+    <ul class="nav nav-pills nav-pills-success justify-content-center">
       <li class="nav-item">
         <a class="nav-link active" href="#places" data-toggle="tab" draggable="false">
           <i class="material-icons mi-pills">explore</i> &nbsp;<span>Tours Types</span>
@@ -22,11 +29,6 @@
           <i class="material-icons mi-pills">beach_access</i> &nbsp;<span>Day Excursions</span>
         </a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#events" data-toggle="tab" draggable="false">
-          <i class="material-icons mi-pills">event</i> &nbsp;<span>Events</span>
-        </a>
-      </li> -->
     </ul>
 
     <div class="tab-content tab-space">

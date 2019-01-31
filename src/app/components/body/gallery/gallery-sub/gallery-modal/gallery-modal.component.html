@@ -1,7 +1,6 @@
 <!-- Modal -->
 
-<div class="modal fade" id="mainModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-  aria-hidden="true">
+<div class="modal fade" id="mainModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content text-dark">
       <div class="modal-header">
@@ -9,12 +8,12 @@
         <button class="btn btn-location-take btn-link btn-info">
           <i class="material-icons">
             location_on
-          </i><span class="text-transform-none">Kandy, Sri Lanka</span></button>
+          </i><span class="text-transform-none">{{obj.location}}</span></button>
 
-        <button class="btn btn-rose btn-location-take btn-link">
+        <!-- <button class="btn btn-rose btn-location-take btn-link">
           <i class="material-icons">
             favorite
-          </i><span class="text-transform-none">2000</span></button>
+          </i><span class="text-transform-none">2000</span></button> -->
 
         <!-- <a href="{{title}}" download>
           <button class="btn btn-success btn-location-take btn-link">
@@ -31,7 +30,7 @@
 
 
         <div class="card bg-dark text-white image-preview">
-          <img class="card-img" src="{{title}}" alt="Card image">
+          <img class="card-img" src="{{obj.src}}" alt="Card image">
         </div>
 
       </div>
@@ -62,148 +61,125 @@
 </div>
 
 
-
-
-
-
 <div class="modal fade" id="modalImageInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="noselect">
-            <p class="text-dark h5 modal-title-info" id="exampleModalLabel">Info</p>
-            <p class="text-dark h5 modal-title-pubdate" id="exampleModalLabel">Published on December 2, 2018</p>
-          </div>
-          <button type="button" class="close noselect" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="noselect">
+          <p class="text-dark h5 modal-title-info" id="exampleModalLabel">Info</p>
+          <p class="text-dark h5 modal-title-pubdate" id="exampleModalLabel">Published on December 2, 2018</p>
         </div>
-        <div class="modal-body text-dark noselect">
-  
-          <div class="row text-center">
-  
-            <div class="col-md-6">
-              <p class="h6 margin-bt-none text-transform-none"><i class="material-icons">
-                  visibility
-                </i> <span class="detail-a-properties">&nbsp; Views</span>
-              </p>
-              <p class="h6 detail-a-properties-values text-transform-none">34213432</p>
-            </div>
-  
-            <!-- <div class="col-md-4">
+        <button type="button" class="close noselect" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-dark noselect">
+
+        <div class="row text-center">
+
+          <div class="col-md-6">
+            <p class="h6 margin-bt-none text-transform-none"><i class="material-icons">
+                visibility
+              </i> <span class="detail-a-properties">&nbsp; Views</span>
+            </p>
+            <p class="h6 detail-a-properties-values text-transform-none">34213432</p>
+          </div>
+
+          <!-- <div class="col-md-4">
               <p class="h6 margin-bt-none text-transform-none"><i class="material-icons">
                   arrow_downward
                 </i> <span class="detail-a-properties">&nbsp; Downloads</span>
               </p>
               <p class="h6 detail-a-properties-values text-transform-none">disabled</p>
             </div> -->
-  
-  
-            <div class="col-md-6">
-              <p class="h6 margin-bt-none text-transform-none"><i class="material-icons">
-                  favorite
-                </i> <span class="detail-a-properties">&nbsp; Likes</span>
-              </p>
-              <p class="h6 detail-a-properties-values text-transform-none">245235432</p>
-            </div>
-  
+
+
+          <div class="col-md-6">
+            <p class="h6 margin-bt-none text-transform-none"><i class="material-icons">
+                favorite
+              </i> <span class="detail-a-properties">&nbsp; Likes</span>
+            </p>
+            <p class="h6 detail-a-properties-values text-transform-none">245235432</p>
           </div>
-  
-          <hr>
-  
-          <div class="row text-center text-transform-none">
-  
-            <div class="col-md-4">
-              <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
-                <i class="material-icons">
-                  photo_camera
-                </i>
-                <span>&nbsp;Camera Make</span></p>
-              <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
-            </div>
-  
-            <div class="col-md-4">
-              <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
-                <i class="material-icons">
-                  camera_enhance
-                </i>
-                <span>&nbsp;Camera Model</span></p>
-              <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
-            </div>
-  
-            <div class="col-md-4">
-              <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
-                <i class="material-icons">
-                  center_focus_strong
-                </i>
-                <span>&nbsp;Focal Length</span></p>
-              <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
-            </div>
-  
-            <div class="col-md-4">
-              <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
-                <i class="material-icons">
-                  camera
-                </i>
-                <span>&nbsp;Aperture</span></p>
-              <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
-            </div>
-  
-            <div class="col-md-4">
-              <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
-                <i class="material-icons">
-                  shutter_speed
-                </i>
-                <span>&nbsp;Shutter Speed</span></p>
-              <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
-            </div>
-  
-            <div class="col-md-4">
-              <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
-                <i class="material-icons">
-                  iso
-                </i>
-                <span>&nbsp;ISO</span></p>
-              <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
-            </div>
-  
-            <div class="col-md-4">
-              <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
-                <i class="material-icons">
-                  photo_size_select_large
-                </i>
-                <span>&nbsp;Dimension</span></p>
-              <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
-            </div>
-  
-          </div>
-  
-  
-  
+
         </div>
-        <!-- <div class="modal-footer">
+
+        <hr>
+
+        <div class="row text-center text-transform-none">
+
+          <div class="col-md-4">
+            <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
+              <i class="material-icons">
+                photo_camera
+              </i>
+              <span>&nbsp;Camera Make</span></p>
+            <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
+              <i class="material-icons">
+                camera_enhance
+              </i>
+              <span>&nbsp;Camera Model</span></p>
+            <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
+              <i class="material-icons">
+                center_focus_strong
+              </i>
+              <span>&nbsp;Focal Length</span></p>
+            <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
+              <i class="material-icons">
+                camera
+              </i>
+              <span>&nbsp;Aperture</span></p>
+            <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
+              <i class="material-icons">
+                shutter_speed
+              </i>
+              <span>&nbsp;Shutter Speed</span></p>
+            <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
+              <i class="material-icons">
+                iso
+              </i>
+              <span>&nbsp;ISO</span></p>
+            <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="h6 margin-bt-none detail-b-properties text-transform-none text-left">
+              <i class="material-icons">
+                photo_size_select_large
+              </i>
+              <span>&nbsp;Dimension</span></p>
+            <p class="h6 detail-b-properties-values text-transform-none text-left">Canon 7D M2 rfdsr</p>
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <!-- <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
           </div> -->
-      </div>
     </div>
   </div>
-  
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="masonry gutterless">
-  <div class="brick" *ngFor="let item of myImages">
-    <div class="img-container" data-toggle="modal" data-target="#mainModal" (click)="imageDetails(item.path, item.path)">
-      <img src="{{item.path}}" alt="Avatar">
-    </div>
-  </div>
-</div> -->
+</div>

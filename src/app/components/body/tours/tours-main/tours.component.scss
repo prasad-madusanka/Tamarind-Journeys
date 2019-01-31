@@ -11,29 +11,29 @@
 
 .tour-cover-title {
     text-align: center;
-    padding-top: 12rem;
+    padding-top: 15rem;
 }
 
 .tour-cover-title-text {
-    color: white;
+    color: rgba(255, 255, 255, 1);
     margin: 0;
     font-size: 38px;
     font-weight: bold;
 }
 
 .tour-cover-sub-title-text {
-    color: white;
+    color: rgba(255, 255, 255, 1);
     margin: 0;
     font-size: 20px;
     font-weight: 500;
     text-transform: none;
 }
 
-.content-container{
+.content-container {
     margin: 2rem;
 }
 
-.mi-pills{
+.mi-pills {
     display: inline !important;
     vertical-align: sub;
     font-size: 18px !important;
@@ -49,4 +49,19 @@
     font-size: 26px;
     margin: 0 auto;
     max-width: 18rem;
+}
+
+.tour-title {
+    h3 {
+        text-align: center;
+        font-weight: bold;
+    }
+    p {
+        padding: 0rem 3rem 0rem 3rem;
+        text-align: justify;
+    }
+    padding-top: 2rem;
+    width: 72rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
 }

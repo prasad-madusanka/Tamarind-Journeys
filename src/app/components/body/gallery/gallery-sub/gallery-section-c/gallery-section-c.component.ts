@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../../../../environments/environment';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gallery-section-c',
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class GallerySectionCComponent implements OnInit {
 
-  currentModalPreview: { id: string, path: string; imageName: string; reactions: string; views: string; downloads: string; uploader: string; info: { cameraMake: string; cameraModel: string; focalLength: string; iso: string; shutterSpeed: string; aperture: string; dimensions: string; }; };
+  currentModalPreview: { id: string, src: string; imageName: string; reactions: string; views: string; downloads: string; uploader: string; info: { cameraMake: string; cameraModel: string; focalLength: string; iso: string; shutterSpeed: string; aperture: string; dimensions: string; }; };
   myImages: any
 
   childTitle: string = 'This text is passed to child';
@@ -79,11 +78,11 @@ export class GallerySectionCComponent implements OnInit {
   }
 
 
-  imageDetails(id, path) {
+  imageDetails(item) {
 
     this.currentModalPreview = {
-      id: id,
-      path: path,
+      id: item,
+      src: item.src,
       imageName: "",
       reactions: "",
       views: "",
@@ -132,7 +131,7 @@ export class GallerySectionCComponent implements OnInit {
   initModalContent() {
     this.currentModalPreview = {
       id: "",
-      path: "",
+      src: "",
       imageName: "",
       reactions: "",
       views: "",

@@ -25,11 +25,11 @@
             <i class="material-icons mi-pills text-color-white">people</i> &nbsp;<span class="text-color-white">People</span>
           </a>
         </li>
-        <li class="nav-item" (click)="selectImageCategory(4)">
+        <!-- <li class="nav-item" (click)="selectImageCategory(4)">
           <a class="nav-link" href="#cities" data-toggle="tab" draggable="false">
             <i class="material-icons mi-pills text-color-white">location_city</i> &nbsp;<span class="text-color-white">Cities</span>
           </a>
-        </li>
+        </li> -->
         <!-- <li class="nav-item" (click)="selectImageCategory('Events')">
           <a class="nav-link" href="#events" data-toggle="tab" draggable="false">
             <i class="material-icons mi-pills text-color-white">event</i> &nbsp;<span class="text-color-white">Events</span>
@@ -63,8 +63,8 @@
   <section>
     <div class="masonry gutterless">
       <div class="brick" *ngFor="let item of myImages">
-        <div class="img-container" data-toggle="modal" data-target="#mainModal" (click)="imageDetails(item.path, item.path)">
-          <img src="{{item.path}}" alt="Avatar">
+        <div class="img-container" data-toggle="modal" data-target="#mainModal" (click)="imageDetails(item)">
+          <img src="{{item.src}}" alt="Avatar">
         </div>
       </div>
     </div>
@@ -75,5 +75,5 @@
   </div> -->
 
 
-  <app-gallery-modal [title]='currentModalPreview.path'></app-gallery-modal>
+  <app-gallery-modal [obj]='currentModalPreview'></app-gallery-modal>
 </div>

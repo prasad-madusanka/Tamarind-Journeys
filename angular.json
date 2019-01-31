@@ -36,8 +36,7 @@
               "src/assets/js/plugins/moment.min.js",
               "src/assets/js/plugins/bootstrap-datetimepicker.js",
               "src/assets/js/plugins/nouislider.min.js",
-              "src/assets/js/material-kit.js",
-              "src/assets/jQuery/animation.js"
+              "src/assets/js/material-kit.js"
 
             ]
           },

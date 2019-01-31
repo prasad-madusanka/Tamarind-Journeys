@@ -22,7 +22,7 @@
         <div class="contact-card">
           <div class="card card-contact">
 
-            <form id="contact-form" method="post" autocomplete="off">
+            <form id="contact-form" autocomplete="off">
 
               <div class="card-header card-header-raised card-header-primary text-center">
                 <h4 class="card-title">
@@ -40,7 +40,7 @@
                   <div class="col-md-6">
                     <div class="form-group label-floating is-empty bmd-form-group">
                       <label class="bmd-label-floating">First name</label>
-                      <input type="text" name="name" class="form-control">
+                      <input type="text" name="name" class="form-control" [(ngModel)]="contactFirstName" name="contactFirstName" (ngModelChange)="validateContactForm()">
                       <span class="material-input"></span>
                     </div>
                   </div>
@@ -48,7 +48,7 @@
                   <div class="col-md-6">
                     <div class="form-group label-floating is-empty bmd-form-group">
                       <label class="bmd-label-floating">Last name</label>
-                      <input type="text" name="name" class="form-control">
+                      <input type="text" name="name" class="form-control" [(ngModel)]="contactLastName" name="contactLastName" (ngModelChange)="validateContactForm()">
                       <span class="material-input"></span>
                     </div>
                   </div>
@@ -57,13 +57,13 @@
 
                 <div class="form-group label-floating is-empty bmd-form-group">
                   <label class="bmd-label-floating">Email address</label>
-                  <input type="email" name="email" class="form-control">
+                  <input type="email" name="email" class="form-control" [(ngModel)]="contactEmailAddress" name="contactEmailAddress" (ngModelChange)="validateContactForm()">
                   <span class="material-input"></span>
                 </div>
 
                 <div class="form-group label-floating is-empty bmd-form-group">
                   <label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
-                  <textarea name="message" class="form-control" id="exampleMessage1" rows="4"></textarea>
+                  <textarea name="message" class="form-control" id="exampleMessage1" rows="4" [(ngModel)]="contactMessage" name="contactMessage" (ngModelChange)="validateContactForm()"></textarea>
                   <span class="material-input"></span>
                 </div>
 
@@ -71,7 +71,7 @@
 
               <div class="card-footer justify-content-center">
 
-                <button type="submit" class="btn btn-primary pull-right">
+                <button type="reset" class="btn btn-primary pull-right" (click)="aboutUsContact()" [disabled]="isSendMessageButtonEnable">
                   <i class="material-icons">
                     send
                   </i>
@@ -91,6 +91,11 @@
   </div>
 
 </div>
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng" [label]="title"></agm-marker>
-</agm-map>
+<!-- <agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng" [label]="marker"></agm-marker>
+</agm-map> -->
+
+<div style="line-height: 0;">
+  <iframe width="100%" height="450" frameborder="0" style="border:0;" [src]="this.gmapURL"
+    allowfullscreen></iframe>
+</div>

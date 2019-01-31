@@ -46,16 +46,16 @@ h4,
     }
 }
 
-.card-background{
+.card-background {
     background-size: cover;
 }
 
-.text-info{
-    color:#00000087 !important;
+.text-info {
+    color: rgba(0, 0, 0, 0.53) !important;
 }
 
-.card-title{
-    color: #fdfeff !important;
+.card-title {
+    color: rgba(253, 254, 255, 1) !important;
 }
 
 .about-sri-lanka-sub-header {
@@ -63,16 +63,14 @@ h4,
     text-align: center;
 }
 
-.card-background-overlay{
+.card-background-overlay {
     border-radius: 7px;
-    background-color: #0000007a;
-    
-    p{
-        color: white;
+    background-color: rgba(0, 0, 0, 0.37);
+    p {
+        color: rgba(255, 255, 255, 1);
     }
-
 }
 
-.card-from-top{
+.card-from-top {
     margin-top: 1rem !important;
 }
