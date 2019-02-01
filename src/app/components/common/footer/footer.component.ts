@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MomentService } from 'src/Services/Twitter/moment.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,64 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  agencyAddress: any = {}
+  agencyRegistration: string = ''
+  agencyRegistrationYear: number
+  agencyDescription: string = ''
+
+  agencyContactEmail: string = ''
+  agencyContactNumbers: string[] = []
+  agencyFacebookPage: string = ''
+  agencyTwitterProfile: string = ''
+
+  tweetsMoments: string[] = []
+  tweets: any[] = []
+
+  constructor(private momentService: MomentService) { }
 
   ngOnInit() {
+    this.initUI()
+    //this.getMoments()
+  }
+
+  initUI() {
+    this.agencyAddress = {
+      "Line1": "Tamarind Journeys",
+      "Line2": "No.55/14/1,",
+      "Line3": "Kurunegala Road,",
+      "Line4": "Nugawela.",
+    }
+
+    this.agencyDescription = "Tamarind Journeys, we are destination management agency plan your tour or holiday in Sri Lanka. We arrange excursions across country side,away from town and cities with fields woods and daily farms along with cool,salubrious climes scenic beaches will definitely cater you and unforgatable experience in your life, during the seasonal journeys in Sri Lanka with Tamarind Journeys."
+
+    this.agencyRegistration = "All Rights Reserved by Tamarind Journeys"
+
+    this.agencyRegistrationYear = new Date().getFullYear()
+
+    this.agencyContactEmail = "tours@tamarindjourneys.com"
+
+    this.agencyContactNumbers = ['(+94) 715 920 819', '(+94) 770 571 554']
+
+    this.agencyFacebookPage = "http://fb.me/tamarindjourneys"
+
+    this.agencyTwitterProfile = 'https://twitter.com/TamarindJourney'
+
+    this.tweetsMoments = ['1091205378216325120', '1091205378216325120', '1091205378216325120']
+
+  }
+
+  fetchMoment(moment_id) {
+    this.momentService.getMoment(moment_id).subscribe((moment) => {
+      if (moment instanceof Object) {
+        this.tweets.push(moment)
+      }
+    })
+  }
+
+  getMoments() {
+    this.tweetsMoments.forEach((item) => {
+      this.fetchMoment(item)
+    })
   }
 
 }

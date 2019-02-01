@@ -1,92 +1,95 @@
-<div class="about-us" style="background-image: url('/assets/img/tours/about.jpg')">
+<div class="about-us noselect" [style.backgroundImage]="'url('+ about_cover +')'">
 
-  <div class="container">
-    <div class="row">
+  <div class="background-overlay">
+    <div class="container">
+      <div class="row">
 
-      <div class="col-md-5">
+        <div class="col-md-5">
 
-        <div class="about-header">
-          <h2 class="title">Get in Touch With us</h2>
+          <div class="about-header">
+            <h2 class="title">Get in Touch With us</h2>
 
-          <h5 class="description">
-            You need more information? Check what other persons are saying about our product. They are very happy with
-            their purchase.
-          </h5>
-        </div>
-
-
-      </div>
-
-      <div class="col-md-5 ml-auto">
-
-        <div class="contact-card">
-          <div class="card card-contact">
-
-            <form id="contact-form" autocomplete="off">
-
-              <div class="card-header card-header-raised card-header-primary text-center">
-                <h4 class="card-title">
-                  <i class="material-icons">
-                    contact_support
-                  </i>
-                  <span>Contact Us</span>
-                </h4>
-              </div>
-
-              <div class="card-body">
-
-                <div class="row">
-
-                  <div class="col-md-6">
-                    <div class="form-group label-floating is-empty bmd-form-group">
-                      <label class="bmd-label-floating">First name</label>
-                      <input type="text" name="name" class="form-control" [(ngModel)]="contactFirstName" name="contactFirstName" (ngModelChange)="validateContactForm()">
-                      <span class="material-input"></span>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="form-group label-floating is-empty bmd-form-group">
-                      <label class="bmd-label-floating">Last name</label>
-                      <input type="text" name="name" class="form-control" [(ngModel)]="contactLastName" name="contactLastName" (ngModelChange)="validateContactForm()">
-                      <span class="material-input"></span>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="form-group label-floating is-empty bmd-form-group">
-                  <label class="bmd-label-floating">Email address</label>
-                  <input type="email" name="email" class="form-control" [(ngModel)]="contactEmailAddress" name="contactEmailAddress" (ngModelChange)="validateContactForm()">
-                  <span class="material-input"></span>
-                </div>
-
-                <div class="form-group label-floating is-empty bmd-form-group">
-                  <label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
-                  <textarea name="message" class="form-control" id="exampleMessage1" rows="4" [(ngModel)]="contactMessage" name="contactMessage" (ngModelChange)="validateContactForm()"></textarea>
-                  <span class="material-input"></span>
-                </div>
-
-              </div>
-
-              <div class="card-footer justify-content-center">
-
-                <button type="reset" class="btn btn-primary pull-right" (click)="aboutUsContact()" [disabled]="isSendMessageButtonEnable">
-                  <i class="material-icons">
-                    send
-                  </i>
-                  Send Message
-                </button>
-
-              </div>
-
-            </form>
-
+            <h5 class="description">{{messageFromTJ}}</h5>
           </div>
+
+
+        </div>
+
+        <div class="col-md-5 ml-auto">
+
+          <div class="contact-card">
+            <div class="card card-contact">
+
+              <form id="contact-form" autocomplete="off">
+
+                <div class="card-header card-header-raised card-header-primary text-center">
+                  <h4 class="card-title">
+                    <i class="material-icons">
+                      contact_support
+                    </i>
+                    <span>Contact Us</span>
+                  </h4>
+                </div>
+
+                <div class="card-body">
+
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <div class="form-group label-floating is-empty bmd-form-group">
+                        <label class="bmd-label-floating">First name</label>
+                        <input type="text" name="name" class="form-control" [(ngModel)]="contactFirstName" name="contactFirstName"
+                          (ngModelChange)="validateContactForm()">
+                        <span class="material-input"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group label-floating is-empty bmd-form-group">
+                        <label class="bmd-label-floating">Last name</label>
+                        <input type="text" name="name" class="form-control" [(ngModel)]="contactLastName" name="contactLastName"
+                          (ngModelChange)="validateContactForm()">
+                        <span class="material-input"></span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group label-floating is-empty bmd-form-group">
+                    <label class="bmd-label-floating">Email address</label>
+                    <input type="email" name="email" class="form-control" [(ngModel)]="contactEmailAddress" name="contactEmailAddress"
+                      (ngModelChange)="validateContactForm()">
+                    <span class="material-input"></span>
+                  </div>
+
+                  <div class="form-group label-floating is-empty bmd-form-group">
+                    <label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
+                    <textarea name="message" class="form-control" id="exampleMessage1" rows="4" [(ngModel)]="contactMessage"
+                      name="contactMessage" (ngModelChange)="validateContactForm()"></textarea>
+                    <span class="material-input"></span>
+                  </div>
+
+                </div>
+
+                <div class="card-footer justify-content-center">
+
+                  <button type="reset" class="btn btn-primary pull-right" (click)="aboutUsContact()" [disabled]="isSendMessageButtonEnable">
+                    <i class="material-icons">
+                      send
+                    </i>
+                    Send Message
+                  </button>
+
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -96,6 +99,5 @@
 </agm-map> -->
 
 <div style="line-height: 0;">
-  <iframe width="100%" height="450" frameborder="0" style="border:0;" [src]="this.gmapURL"
-    allowfullscreen></iframe>
+  <iframe async width="100%" height="450" frameborder="0" style="border:0;" [src]="this.gmapURL" allowfullscreen></iframe>
 </div>

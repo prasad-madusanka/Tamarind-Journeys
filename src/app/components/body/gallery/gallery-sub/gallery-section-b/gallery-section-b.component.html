@@ -1,5 +1,5 @@
 <section>
-  <div class="section-b-cover" style="background-image: url('./src/assets/img/tours/cover1.jpg')">
+  <div class="section-b-cover" [style.backgroundImage]="'url('+ gallery_cover +')'">
     <div class="cover-filter">
 
 
@@ -7,7 +7,7 @@
         <ul class="row round-progress-bar justify-content-center">
           <li class="col-md-4" *ngFor="let x of round" style="max-width:10rem;">
 
-            <circle-progress class="noselect" [percent]=x.value [maxPercent]=x.value [outerStrokeColor]=x.c1
+            <circle-progress class="noselect" [percent]=x.value [maxPercent]=x.maxPercent [outerStrokeColor]=x.c1
               [innerStrokeColor]=x.c2></circle-progress>
             <h5 class="h5">{{x.title}}</h5>
 

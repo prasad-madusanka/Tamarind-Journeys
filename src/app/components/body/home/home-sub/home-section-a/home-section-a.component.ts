@@ -21,30 +21,30 @@ export class HomeSectionAComponent implements OnInit {
       {
         "activeImage": "active",
         "src": "assets/img/carousel/1.jpg",
-        "title": "Sigiriya, Sri Lanka",
-        "content": "Gabbana is a luxury Italian fashion house founded in 1985 in Legnano by Italian designers Domenico Dolce and Stefano Gabbana.The two met in Milan in 1980 and designed for the same fashion house",
-        "location": "Tangalle Rd, Tangalle, Sri Lanka"
+        "title": "Temple of Tooth Relic",
+        "content": "A buddhist temple located in the royal palace complex of the last administrative kingdom of ancient sri lanka, which houses the relic of the tooth of the loard buddha",
+        "location": "Kandy, Sri Lanka"
       },
       {
         "activeImage": "",
         "src": "assets/img/carousel/2.jpg",
-        "title": "Sigiriya, Sri Lanka",
-        "content": "Gabbana is a luxury Italian fashion house founded in 1985 in Legnano by Italian designers Domenico Dolce and Stefano Gabbana.The two met in Milan in 1980 and designed for the same fashion house",
-        "location": "Tangalle Rd, Tangalle, Sri Lanka"
+        "title": "Devi - Nuwara (Dondra)",
+        "content": "The little town of Devi - Nuwara or the 'City of Gods' is located at the most southern edge of the country. According to the legend Devinuwara was a flourishing city in the time of King 'Rawana'",
+        "location": "Dewundara, Sri Lanka"
       },
       {
         "activeImage": "",
         "src": "assets/img/carousel/3.jpg",
-        "title": "Sigiriya, Sri Lanka",
-        "content": "Gabbana is a luxury Italian fashion house founded in 1985 in Legnano by Italian designers Domenico Dolce and Stefano Gabbana.The two met in Milan in 1980 and designed for the same fashion house",
-        "location": "Tangalle Rd, Tangalle, Sri Lanka"
+        "title": "Golden Southern Beach",
+        "content": "Tranquil sound of the waves kissing the golden southern beach",
+        "location": "Matara, Sri Lanka"
       },
       {
         "activeImage": "",
         "src": "assets/img/carousel/4.jpg",
-        "title": "Sigiriya, Sri Lanka",
-        "content": "Gabbana is a luxury Italian fashion house founded in 1985 in Legnano by Italian designers Domenico Dolce and Stefano Gabbana.The two met in Milan in 1980 and designed for the same fashion house",
-        "location": "Tangalle Rd, Tangalle, Sri Lanka"
+        "title": "Yala",
+        "content": "The second biggest National Park in Sri Lanka and One of the most ideal National Park in South Asia and home for the the Sri Lankan Leopard (Panthera Pardus Kotiya)",
+        "location": "Yala, Sri Lanka"
       }
     ]
   }

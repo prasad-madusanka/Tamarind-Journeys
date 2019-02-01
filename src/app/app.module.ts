@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 
+import { HttpClientModule } from '@angular/common/http'
+
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { AppRoutingModule } from './app-routing/app-routing.module'
@@ -60,8 +62,9 @@ import { TourTypesComponent } from './components/body/tours/tours-sub/tour-types
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAebpQM0Oo7SkefxRPYeZ95MHznCVC3Pn0'
+      apiKey: 'AIzaSyDf8gRlofjc3Wse-fq6rZVCvmBM_qHRHx8'
     }),
     NgCircleProgressModule.forRoot({
       radius: 50,
@@ -74,7 +77,7 @@ import { TourTypesComponent } from './components/body/tours/tours-sub/tour-types
       innerStrokeColor: "#e7e8ea",
       titleColor: "#ffffff",
       titleFontSize: "16",
-      animationDuration: 1000,
+      animationDuration: 500,
       toFixed: 0,
       showTitle: true,
       showUnits: false,

@@ -32,7 +32,7 @@ export class HomeSectionCComponent implements OnInit {
         "name": "People",
         "title": "People Sri Lanka",
         "description": "The official name of the nation is the Democratic Socialist Republic of Sri Lanka. This Pearl of Asia covered by wonderful travel destinations with friendly smile people. Sri Lanka is a Multi-ethnic, multi- national and multi cultural country. Moreover the majority of Sinhala Buddhists, the nation also includes Sri Lankan Tamils, Tamils of Indian origin, Muslims and Burgers. ",
-        "src": "assets/img/tours/people.jpg",
+        "src": "assets/img/gallery/people/people-1.jpg",
         "style": "badge-rose"
       }
     ]

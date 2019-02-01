@@ -7,8 +7,11 @@ export const environment = {
   TAG_CITIES: 'Cities',
   TAG_EVENTS: 'Events',
   TAG_FOOD: 'Dood',
+
+  SERVICE_TWITTER_MOMENTS: 'https://publish.twitter.com/oembed?url=https://twitter.com/i/moments/',
+
+
   Nature: [
-    { src: '/assets/img/gallery/nature/nature-1.jpg' },
     { src: '/assets/img/gallery/nature/nature-2.jpg' },
     { src: '/assets/img/gallery/nature/nature-3.jpg' },
     { src: '/assets/img/gallery/nature/nature-4.jpg' },
@@ -78,6 +81,7 @@ export const environment = {
     { src: '/assets/img/gallery/wildlife/wd-3.jpg' },
     { src: '/assets/img/gallery/wildlife/wd-4.jpg' },
     { src: '/assets/img/gallery/wildlife/wd-5.jpg' },
-    { src: '/assets/img/gallery/wildlife/wd-6.jpg' }]
-};
+    { src: '/assets/img/gallery/wildlife/wd-6.jpg' }],
 
+    GM_KEY: 'AIzaSyDf8gRlofjc3Wse-fq6rZVCvmBM_qHRHx8'
+};

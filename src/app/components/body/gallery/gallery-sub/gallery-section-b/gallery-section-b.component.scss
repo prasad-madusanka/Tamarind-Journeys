@@ -5,12 +5,10 @@
 }
 
 .cover-filter {
-    background: #000046;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #232323, #0000468f);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #232323, #0000468f);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    //background: #000046;
+    //#0000468f
+    background: -webkit-linear-gradient(to top, #232323, #00004600);
+    background: linear-gradient(to top, #232323, #00004600);
     width: 100%;
     height: inherit;
     position: absolute;

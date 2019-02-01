@@ -21,6 +21,8 @@
 }
 
 .description {
+    font-size: 15px;
+    font-weight: 400;
     color: #dad7d7;
 }
 
@@ -32,4 +34,12 @@
 
 agm-map {
     height: 500px;
+}
+
+.login-control{
+    display: none !important
+}
+
+.background-overlay{
+    background-color: #0000002b;
 }

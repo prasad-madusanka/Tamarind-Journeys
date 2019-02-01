@@ -9,22 +9,19 @@
 
           <div class="brand-logo">
             <a href="/">
-              <img src="./assets/img/brand/Logo_2.png" alt="cinnamonjourneys" draggable="false">
+              <img src="./assets/img/brand/Logo_2.png" alt="tamarindjourneys" draggable="false">
               <!-- <i class="material-icons text-color-white footer-brand-icon" aria-hidden="true">spa</i>
               <span class="title text-color-white">Tamarind Journeys</span> -->
             </a>
           </div>
 
-          <p class="brand-desc">
-            Thanks very much for your reply. But what we need to do is to prevent line break on ckeditor where all the
-            content will be entered by the end users.
-          </p>
+          <p class="brand-desc">{{agencyDescription}}</p>
 
           <p class="brand-address">
-            Tamarind Journeys <br>
-            No.55/14/1, <br>
-            Kurunegala Road, <br>
-            Nugawela.
+            {{agencyAddress.Line1}} <br>
+            {{agencyAddress.Line2}} <br>
+            {{agencyAddress.Line3}} <br>
+            {{agencyAddress.Line4}}
           </p>
 
         </div>
@@ -74,15 +71,9 @@
             <li class="default">
               <span>Phone:</span>
             </li>
-            <li>
+            <li *ngFor="let contact of agencyContactNumbers">
               <span>
-                (+94) 715 920 819
-              </span>
-            </li>
-
-            <li>
-              <span>
-                (+94) 770 571 554
+                {{contact}}
               </span>
             </li>
 
@@ -142,53 +133,21 @@
           <p class="title text-white text-left default">Tweets</p>
 
           <ul>
-            <li>
+
+            <li *ngFor="let item of tweets">
               <div class="twitter-row noselect">
                 <i class="fa fa-twitter"></i>
                 &nbsp;
-                <p>This message has tweeted by several users
-                  <a routerLink="/home">
-                    http://example.com
+                <p>{{item.title}}
+                  <a href="{{item.url}}">
+                    {{item.provider_url}}
                   </a>
                 </p>
               </div>
             </li>
 
-            <li>
-              <div class="twitter-row noselect">
-                <i class="fa fa-twitter"></i>
-                &nbsp;
-                <p>This message has tweeted by several users
-                  <a href="http://example.com">
-                    http://example.com
-                  </a>
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div class="twitter-row noselect">
-                <i class="fa fa-twitter"></i>
-                &nbsp;
-                <p>This message has tweeted by several users
-                  <a routerLink="/home">
-                    http://example.com
-                  </a>
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="twitter-row noselect">
-                <i class="fa fa-twitter"></i>
-                &nbsp;
-                <p>This message has tweeted by several users
-                  <a routerLink="/home">
-                    http://example.com
-                  </a>
-                </p>
-              </div>
-            </li>
           </ul>
+
 
 
         </div>
@@ -201,16 +160,16 @@
 
     <div class="row justify-content-center mr2">
       <div>
-        <a class="btn btn-just-icon btn-facebook btn-social btn-round">
+        <a href="{{agencyFacebookPage}}" target="_blank" class="btn btn-just-icon btn-facebook btn-social btn-round">
           <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
-        <a class="btn btn-just-icon btn-instagram btn-social btn-round">
+        <!-- <a class="btn btn-just-icon btn-instagram btn-social btn-round">
           <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a class="btn btn-just-icon btn-twitter btn-social btn-round">
+        </a> -->
+        <a href="{{agencyTwitterProfile}}" target="_blank" class="btn btn-just-icon btn-twitter btn-social btn-round">
           <i class="fa fa-twitter" aria-hidden="true"></i>
         </a>
-        <a href="mailto:tours@tamarindjourneys.com" class="btn btn-just-icon btn-mail btn-social btn-round">
+        <a href="mailto:{{agencyContactEmail}}" class="btn btn-just-icon btn-mail btn-social btn-round">
           <i class="material-icons" aria-hidden="true">email</i>
         </a>
       </div>
@@ -232,7 +191,7 @@
     </div>
 
     <div class="row justify-content-center">
-      <p class="copyright">All Rights Reserved by CinnamonJourneys - &copy; 2019</p>
+      <p class="copyright">{{agencyRegistration}} - &copy; {{agencyRegistrationYear}}</p>
     </div>
 
 

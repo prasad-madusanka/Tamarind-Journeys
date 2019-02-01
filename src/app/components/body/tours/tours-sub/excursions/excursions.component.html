@@ -31,7 +31,7 @@
 <div class="tours noselect">
 
   <div class="row">
-    <div class="col-md-4 card-bottom-space" *ngFor="let item of search()">
+    <div class="col-md-4 card-bottom-space" *ngFor="let item of search(); let itemNumber = index">
 
       <div class="card">
         <!-- <img class="card-img-top card-image" [src]=rw.img alt="Card image cap" draggable="false"> -->
@@ -51,7 +51,7 @@
         <div class="card-footer-icons">
 
           <div class="btn-more-details">
-            <button class="btn btn-success btn-round btn-sm" data-toggle="modal" data-target="#modalExcursions" (click)="excursionsDetails(item)">
+            <button class="btn btn-success btn-round btn-sm" data-toggle="modal" data-target="#modalExcursions" (click)="excursionsDetails(itemNumber)">
               <i class="material-icons">more</i> <span>&nbsp; More</span>
             </button>
           </div>
