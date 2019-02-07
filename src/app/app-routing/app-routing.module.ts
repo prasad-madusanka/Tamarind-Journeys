@@ -17,7 +17,7 @@ import { GalleryModalComponent } from '../components/body/gallery/gallery-sub/ga
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'tours', component: ToursComponent },
   { path: 'about-us', component: AboutUsComponent },
   {
