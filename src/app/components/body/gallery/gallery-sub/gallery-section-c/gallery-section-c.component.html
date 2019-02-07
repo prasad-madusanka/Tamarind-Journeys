@@ -60,15 +60,17 @@
     </div>
   </section>
 
-  <section>
-    <div class="masonry gutterless">
-      <div class="brick" *ngFor="let item of myImages">
-        <div class="img-container" data-toggle="modal" data-target="#mainModal" (click)="imageDetails(item)">
-          <img src="{{item.src}}" alt="Avatar">
+  <div class="gallery-height">
+    <section>
+      <div class="masonry gutterless">
+        <div class="brick" *ngFor="let item of myImages">
+          <div class="img-container" data-toggle="modal" data-target="#mainModal" (click)="imageDetails(item)">
+            <img src="{{item.src}}" alt="Avatar">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- <div>
     <button class="btn btn-rose btn-round btn-load-more" (click)="loadImages()">Load More</button>

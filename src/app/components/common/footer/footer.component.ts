@@ -8,6 +8,8 @@ import { MomentService } from 'src/Services/Twitter/moment.service';
 })
 export class FooterComponent implements OnInit {
 
+  brandLogo: string = ''
+
   agencyAddress: any = {}
   agencyRegistration: string = ''
   agencyRegistrationYear: number
@@ -29,6 +31,9 @@ export class FooterComponent implements OnInit {
   }
 
   initUI() {
+
+    this.brandLogo = './assets/img/brand/Brand.png'
+
     this.agencyAddress = {
       "Line1": "Tamarind Journeys",
       "Line2": "No.55/14/1,",
@@ -36,7 +41,7 @@ export class FooterComponent implements OnInit {
       "Line4": "Nugawela.",
     }
 
-    this.agencyDescription = "Tamarind Journeys, we are destination management agency plan your tour or holiday in Sri Lanka. We arrange excursions across country side,away from town and cities with fields woods and daily farms along with cool,salubrious climes scenic beaches will definitely cater you and unforgatable experience in your life, during the seasonal journeys in Sri Lanka with Tamarind Journeys."
+    this.agencyDescription = "Tamarind Journeys, we are destination management agency plan your tour or holiday in Sri Lanka. We arrange excursions across country side,away from town and cities with fields woods and dairy farms along with cool,salubrious climes scenic beaches will definitely cater you and unforgatable experience in your life, during the seasonal journeys in Sri Lanka with Tamarind Journeys."
 
     this.agencyRegistration = "All Rights Reserved by Tamarind Journeys"
 
@@ -44,7 +49,7 @@ export class FooterComponent implements OnInit {
 
     this.agencyContactEmail = "tours@tamarindjourneys.com"
 
-    this.agencyContactNumbers = ['(+94) 715 920 819', '(+94) 770 571 554']
+    this.agencyContactNumbers = ['(+94) 715 920 819', '(+94) 770 571 554', '(+94) 713 432 047']
 
     this.agencyFacebookPage = "http://fb.me/tamarindjourneys"
 

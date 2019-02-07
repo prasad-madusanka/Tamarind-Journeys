@@ -31,6 +31,7 @@ import { GallerySectionBComponent } from './components/body/gallery/gallery-sub/
 import { GallerySectionCComponent } from './components/body/gallery/gallery-sub/gallery-section-c/gallery-section-c.component';
 import { GallerySectionDComponent } from './components/body/gallery/gallery-sub/gallery-section-d/gallery-section-d.component';
 import { TourTypesComponent } from './components/body/tours/tours-sub/tour-types/tour-types.component';
+import { LocationStrategy, PathLocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -84,7 +85,7 @@ import { TourTypesComponent } from './components/body/tours/tours-sub/tour-types
       showSubtitle: false
     })
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

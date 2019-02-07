@@ -11,19 +11,19 @@
         <h6 class="card-category text-info">
           <span class="badge" [ngClass]="item.style">{{item.name}}</span>
         </h6>
-        <h3 class="card-title">{{item.title}}</h3>
+        <!-- <h3 class="card-title">{{item.title}}</h3> -->
         <p class="card-description text-justify">{{item.description}}</p>
       </div>
     </div>
   </div>
 
   <div class="col-md-12" *ngFor="let item of row2">
-    <div class="card card-raised card-background" style="background-image: url('./src/assets/img/tours/food.jpg')">
+    <div class="card card-raised card-background" [style.backgroundImage]="'url('+ item.src +')'">
       <div class="card-body card-background-overlay">
         <h6 class="card-category text-info">
           <span class="badge" [ngClass]="item.style">{{item.name}}</span>
         </h6>
-        <h3 class="card-title">{{item.title}}</h3>
+        <!-- <h3 class="card-title">{{item.title}}</h3> -->
         <p class="card-description  text-justify">{{item.description}}</p>
 
       </div>
@@ -42,7 +42,7 @@
 </div>
 
 <div class="about-sl">
-  <h3>Key points</h3>
+  <h3 class="title">Why Sri Lanka</h3>
 </div>
 
 <div class="row sec-2">

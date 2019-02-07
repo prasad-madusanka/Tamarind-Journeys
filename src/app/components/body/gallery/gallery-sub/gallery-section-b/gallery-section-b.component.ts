@@ -10,6 +10,7 @@ export class GallerySectionBComponent implements OnInit {
 
   round: any = []
   gallery_cover: string = ''
+  quote: any = {}
 
   constructor() { }
 
@@ -19,7 +20,12 @@ export class GallerySectionBComponent implements OnInit {
 
   initUI() {
 
-    this.gallery_cover = '/assets/img/carousel/2.jpg'
+    this.gallery_cover = 'assets/img/carousel/2.jpg'
+
+    this.quote = {
+      "header":'"Every picture tells a story"',
+      "body":"So feel the picturesque beauty of Sri Lankan Heritage, Beaches, Wildlife, Mind and body wellness, Scenic beauty, Sport and Adventure, Festivals and Essence"
+    }
 
     var imageCount = environment.Nature.length + environment.Wild_Life.length + environment.culture.length + environment.people.length
 

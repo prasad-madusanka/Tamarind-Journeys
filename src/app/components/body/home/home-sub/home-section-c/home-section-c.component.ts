@@ -32,7 +32,7 @@ export class HomeSectionCComponent implements OnInit {
         "name": "People",
         "title": "People Sri Lanka",
         "description": "The official name of the nation is the Democratic Socialist Republic of Sri Lanka. This Pearl of Asia covered by wonderful travel destinations with friendly smile people. Sri Lanka is a Multi-ethnic, multi- national and multi cultural country. Moreover the majority of Sinhala Buddhists, the nation also includes Sri Lankan Tamils, Tamils of Indian origin, Muslims and Burgers. ",
-        "src": "assets/img/gallery/people/people-1.jpg",
+        "src": "assets/img/gallery/people/people-3.jpg",
         "style": "badge-rose"
       }
     ]
@@ -42,12 +42,12 @@ export class HomeSectionCComponent implements OnInit {
         "name": "Food",
         "title": "Food Sri Lanka",
         "description": "Sri Lankan food is exclusive for country traditions. Sri Lankan cuisine plays a fundamental role in the islanders’ life from the most famous Sinhala/Hindu New Year to normal day-to-day practices. They make Milk-rice and special sweets with Coconut milk, floor and honey at cultural festivals. It is recognized as one of the sixty-four types of art “Siu sata kalawa”. The curries come in many verities of colors and flavors blended in Sri Lanka. Hot spices have a great Ayurvedic value when used in curries. With a majority of country people, the rice and curry is the main food in Sri Lanka. Sri Lankan cuisine that different regions of country specialize in different types of dishes. The specialty in Sri Lankan food is that people used to cook same food by using different methods in different regions. Spices such as Cloves, Cardamoms, Nutmeg and Pepper are found in usually throughout Kandy and Mathale districts in central region of Sri Lanka. Sri Lankans also like to have drinks Tea and coffee.",
-        "src": "assets/img/tours/people.jpg",
+        "src": "assets/img/site-images/home/food.jpg",
         "style": "badge-info"
       }
     ]
 
-    this.row3 = "This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more."
+    this.row3 = "The Pearl of the Indian Ocean. People say there is no any other country in the world, like Sri Lanka. A bright sun all year around, scenic beaches, ancient kingdoms, wild safaries, tradition and culture , nature, adventure, and hospitable people"
 
     this.row4 = [
       {

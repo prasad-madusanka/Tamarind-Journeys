@@ -17,7 +17,7 @@ export class ExcursionsComponent implements OnInit {
   ngOnInit() {
     this.excursionCategories = [
       {
-        src: "/assets/img/site-images/JPEG/kandycity_tour.jpg",
+        src: "assets/img/site-images/JPEG/kandycity_tour.jpg",
         title: "Kandy City Tour",
         subDescription: "Kandy, one of the most eye pleasuring town that is famous as the last historical kingdom of Sri Lanka",
         mainDescription:
@@ -29,7 +29,7 @@ export class ExcursionsComponent implements OnInit {
           ]
       },
       {
-        src: "/assets/img/site-images/JPEG/ancientcity_anuradhapura_tour.jpg",
+        src: "assets/img/site-images/JPEG/ancientcity_anuradhapura_tour.jpg",
         title: "Ancient City Tour – Anuradhapura",
         subDescription: "Anuradhapura, the first Historical Kingdom of Sri Lanka in 04th century. It is in North Central Province",
         mainDescription:
@@ -43,7 +43,7 @@ export class ExcursionsComponent implements OnInit {
           ]
       },
       {
-        src: "/assets/img/site-images/JPEG/threeTemple_tour.jpg",
+        src: "assets/img/site-images/JPEG/threeTemple_tour.jpg",
         title: "Three Temple & Pinnawala Elephant Orphanage Visit",
         subDescription: "Gampola Kindgdom is another oldest and ancient kingdom in Sri Lanka. In here we can visit the most famous temple",
         mainDescription:
@@ -55,7 +55,7 @@ export class ExcursionsComponent implements OnInit {
           ]
       },
       {
-        src: "/assets/img/site-images/JPEG/cultural_trails.jpg",
+        src: "assets/img/site-images/JPEG/cultural_trails.jpg",
         title: "Cultural Trails",
         subDescription: "This has become the worlds’ 08th wonder and this is a UNESCO World Heritage Site. Called “Sinha-Giriya",
         mainDescription:
@@ -66,7 +66,7 @@ export class ExcursionsComponent implements OnInit {
           ]
       },
       {
-        src: "/assets/img/site-images/JPEG/sigiriya_tour.jpg",
+        src: "assets/img/site-images/JPEG/sigiriya_tour.jpg",
         title: "Pidurangala, Dambulla & Village Tour in Sigiriya",
         subDescription: "Pidurangala viharaya is situated iin Sigiriya kingdom. And it is 340 m height from the Sea level. This is a Buddhist",
         mainDescription:
@@ -77,7 +77,7 @@ export class ExcursionsComponent implements OnInit {
           ]
       },
       {
-        src: "/assets/img/site-images/JPEG/kandy_hideout_tour.jpg",
+        src: "assets/img/site-images/JPEG/kandy_hideout_tour.jpg",
         title: "Kandy Hide-Out Trails",
         subDescription: "The first Agro Technology Park situated inn Kandy; UNESCOO World Heritage city is a place which depicts ancient",
         mainDescription:
@@ -89,7 +89,7 @@ export class ExcursionsComponent implements OnInit {
           ]
       },
       {
-        src: "/assets/img/site-images/JPEG/nuwaraeliya_tour.jpg",
+        src: "assets/img/site-images/JPEG/nuwaraeliya_tour.jpg",
         title: "Nuwara Eliya City Tour",
         subDescription: "Nuwara Eliya known as “Little England” is a city in the Tea Country, hills of Central Sri Lanka. Its name means",
         mainDescription:

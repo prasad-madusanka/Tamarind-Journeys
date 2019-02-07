@@ -1,20 +1,21 @@
 <div class="page-container noselect ">
 
-  <div class="cover-img" [ngStyle]="{'background-image': 'linear-gradient(rgba(4, 4, 4, 0.45), rgba(255, 255, 255, 0.192)), url(' + cover.src + ')'}">
+  <div class="cover-img"
+    [ngStyle]="{'background-image': 'linear-gradient(rgba(4, 4, 4, 0.45), rgba(255, 255, 255, 0.192)), url(' + cover.src + ')'}">
     <div class="tour-cover-title">
       <h4 class="tour-cover-title-text">{{cover.title}}</h4>
       <p class="tour-cover-sub-title-text"> - {{cover.subtitle}} - </p>
     </div>
   </div>
-  <!-- , -->
+
   <app-tour-types></app-tour-types>
-
-
 
   <div class="tour-title noselect">
     <h3>{{tours.title}}</h3>
     <p>{{tours.content}}</p>
   </div>
+
+  <app-events></app-events>
 
   <div class="content-container noselect">
 

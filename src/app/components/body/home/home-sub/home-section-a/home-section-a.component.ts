@@ -36,7 +36,7 @@ export class HomeSectionAComponent implements OnInit {
         "activeImage": "",
         "src": "assets/img/carousel/3.jpg",
         "title": "Golden Southern Beach",
-        "content": "Tranquil sound of the waves kissing the golden southern beach",
+        "content": "With nearly 1600km of palm fringed coastline baked to perfection surrounding the country Sri Lanka …is the ideal destination for beach bums worldwide may it be windsurfing, kayaking, yachting, water skiing, scuba diving or just lazing around for the perfect tan",
         "location": "Matara, Sri Lanka"
       },
       {

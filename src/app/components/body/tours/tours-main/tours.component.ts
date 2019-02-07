@@ -18,7 +18,7 @@ export class ToursComponent implements OnInit {
 
   initUI() {
     this.cover = {
-      "src": "/assets/img/site-images/tours/tours-cover.jpg",
+      "src": "assets/img/site-images/tours/tours-cover.jpg",
       "title": "Explore Beauty in Every Step",
       "subtitle": "Pick the best trip plan for you"
     }

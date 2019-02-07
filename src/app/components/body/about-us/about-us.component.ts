@@ -34,7 +34,7 @@ export class AboutUsComponent implements OnInit {
   }
 
   initUI() {
-    this.about_cover = '/assets/img/site-images/about-us/nature-1.jpg'
+    this.about_cover = 'assets/img/site-images/about-us/nature-1.jpg'
     this.messageFromTJ = "Tamarind journeys happily arrange your dream holiday,honeymoon vacation with hotel bookings. We highly recommend and select the ideal travel destinations around Sri Lanka."
   }
 

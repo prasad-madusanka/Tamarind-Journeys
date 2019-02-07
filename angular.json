@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CJ",
+            "outputPath": "dist/tamarind-journeys",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/fonts/fontawesome-webfont.woff2",
+              "src/assets/fonts/fontawesome-webfont.woff",
+              "src/assets/fonts/fontawesome-webfont.ttf"
             ],
             "scripts": [
               "src/assets/js/core/jquery.min.js",
@@ -37,7 +41,6 @@
               "src/assets/js/plugins/bootstrap-datetimepicker.js",
               "src/assets/js/plugins/nouislider.min.js",
               "src/assets/js/material-kit.js"
-
             ]
           },
           "configurations": {

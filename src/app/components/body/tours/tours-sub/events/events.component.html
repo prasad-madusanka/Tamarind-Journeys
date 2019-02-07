@@ -1,0 +1,56 @@
+<div class="container noselect special-packages">
+
+    <h4 class="title text-center package-title">Special Packages</h4>
+
+    <div class="row">
+
+        <div class="col-md-3" *ngFor="let item of specialPackages">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <h6 class="card-subtitle text-transform-none mb-2 text-muted">{{item.subtitle}}</h6>
+                    <!-- <p class="card-text">{{item.content}}</p> -->
+                    <button class="btn btn-rose btn-round btn-sm" (click)="setSelectedPackages(item)" data-toggle="modal" data-target="#modalSpecialPackages">More</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade noselect" id="modalSpecialPackages" tabindex="-1" role="dialog"
+    aria-labelledby="modalSpecialPackagesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalSpecialPackagesLabel">
+                    <b>{{selectedPackage.title}}&nbsp;/&nbsp;{{selectedPackage.subtitle}}</b></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="description text-black">
+                    <div *ngFor="let packageDescription of selectedPackage.description">
+                        <p class="h6">{{packageDescription.day}}</p>
+                        <p>
+                            {{packageDescription.workout}}
+                        </p>
+                        <p class="h6 text-transform-none">{{packageDescription.stayAt}}</p>
+                        <p class="h6 text-transform-none">{{packageDescription.roomType}}</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>

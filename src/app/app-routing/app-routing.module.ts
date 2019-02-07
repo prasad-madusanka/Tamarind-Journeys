@@ -16,19 +16,20 @@ import { GalleryModalComponent } from '../components/body/gallery/gallery-sub/ga
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'tours', component: ToursComponent },
   { path: 'about-us', component: AboutUsComponent },
   {
     path: 'gallery', component: GalleryComponent,
     children: [{ path: 'view', component: GalleryModalComponent }]
-  }
+  },
+  { path: '**', redirectTo: 'home' }
 ]
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { useHash: true })
+    RouterModule.forRoot(routes)
   ], exports: [RouterModule],
   declarations: []
 })

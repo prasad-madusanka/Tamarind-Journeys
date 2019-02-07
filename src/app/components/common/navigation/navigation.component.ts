@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  brandLogo: string = ''
+  brandName: string = ''
+
   constructor() { }
 
   ngOnInit() {
+    this.initUI()
+  }
+
+  initUI(){
+    this.brandLogo = './assets/img/brand/Logo.png'
+    this.brandName = 'Tamarind Journeys'
   }
 
 }

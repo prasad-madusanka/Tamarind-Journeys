@@ -45,6 +45,17 @@
     overflow-y: auto;
 }
 
-.card-from-top{
+.card-from-top {
     margin-top: 1rem;
+}
+
+.client-detail {
+    margin-top: 3px !important;
+    i {
+        font-size: 15px;
+        line-height: 1px;
+    }
+    span {
+        font-size: 12px;
+    }
 }
