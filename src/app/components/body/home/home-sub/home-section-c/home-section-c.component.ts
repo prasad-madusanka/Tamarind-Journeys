@@ -24,7 +24,7 @@ export class HomeSectionCComponent implements OnInit {
       {
         "name": "Diversity",
         "title": "Diversity Sri Lanka",
-        "description": "Sri Lanka, Lapped by the warm Indian Ocean with goldi sandy beaches. Natural heaven with a landscape of misty covered Mountains, Rain Forests, Priceless Gemstones, Paddy Cultivation, Waterfalls, High Bio- divorsitical endemics related to wildlife & Marine parks. Culture & Heritage always become a major part of the country.",
+        "description": "Sri Lanka, Lapped by the warm Indian Ocean with gold sandy beaches. Natural heaven with a landscape of misty covered Mountains, Rain Forests, Priceless Gemstones, Paddy Cultivation, Waterfalls, High Bio- divorsitical endemics related to wildlife & Marine parks. Culture & Heritage always become a major part of the country.",
         "src": "assets/img/site-images/home/diversity.jpg",
         "style": "badge-success"
       },

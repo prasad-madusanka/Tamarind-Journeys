@@ -24,14 +24,14 @@ export class PlacesComponent implements OnInit {
       {
         src: "assets/img/site-images/JPEG/agro_tours.jpg",
         title: "Agro Tourism",
-        subDescription: "Cinnamon Journeys is dedicated to supply you a practical experience related to different cultures",
-        mainDescription: "Cinnamon Journeys is dedicated to supply you a practical experience related to different cultures, life styles and agricultural methods in various areas in our agricultural country in Asia."
+        subDescription: "Tamarind Journeys is dedicated to supply you a practical experience related to different cultures",
+        mainDescription: "Tamarind Journeys is dedicated to supply you a practical experience related to different cultures, life styles and agricultural methods in various areas in our agricultural country in Asia."
       },
       {
         src: "assets/img/site-images/JPEG/nature_tours.jpg",
         title: "Nature Trails",
         subDescription: "Sri Lanka is a beautiful country which is full bio diversity and surrounded by blue sea.",
-        mainDescription: "Sri Lanka is a beautiful country which is full bio diversity and surrounded by blue sea. There we can find many species of flora and fauna which adapted to different environment systems. Join your hands with Cinnamon Journeys to make you happy and wonderful while travelling in mountains, watching waterfalls, walking in evergreen forests and to get wild life experience."
+        mainDescription: "Sri Lanka is a beautiful country which is full bio diversity and surrounded by blue sea. There we can find many species of flora and fauna which adapted to different environment systems. Join your hands with Tamarind Journeys to make you happy and wonderful while travelling in mountains, watching waterfalls, walking in evergreen forests and to get wild life experience."
       },
       {
         src: "assets/img/site-images/JPEG/srilankan_highlights.jpg",
