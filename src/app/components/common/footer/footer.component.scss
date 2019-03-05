@@ -187,6 +187,16 @@
     color: #cccccc;
 }
 
+.contact-developer {
+    font-weight: 400;
+    color: #cccccc;
+    i {
+        font-size: 16px;
+        vertical-align: sub;
+        color: #ff3838;
+    }
+}
+
 .legal {
     font-size: 13px;
     color: #cccccc;
@@ -200,7 +210,7 @@
     transition: 0.3s;
 }
 
-.foot-navigation-link{
+.foot-navigation-link {
     color: #cccccc;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -222,4 +232,9 @@
     .brand-logo {
         text-align: center;
     }
+}
+
+.fa-copied{
+    color: #1bc322;
+    font-size: 14px;
 }

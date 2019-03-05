@@ -23,6 +23,11 @@ export class FooterComponent implements OnInit {
   tweetsMoments: string[] = []
   tweets: any[] = []
 
+  devEmail: string = "prasad.mads@gmail.com"
+  devTel: string = "+94 777 578 947"
+  isEmail: boolean = false
+  isMobile: boolean = false
+
   constructor(private momentService: MomentService) { }
 
   ngOnInit() {
@@ -71,6 +76,21 @@ export class FooterComponent implements OnInit {
     this.tweetsMoments.forEach((item) => {
       this.fetchMoment(item)
     })
+  }
+
+  copyToClickboard(params) {
+
+    this.isEmail = (params == 'emailAddress') ? true : false
+
+    this.isMobile = (params == 'mobileNumber') ? true : false
+
+
+    document.addEventListener('copy', (e: ClipboardEvent) => {
+      e.clipboardData.setData('text/plain', (params));
+      e.preventDefault();
+      document.removeEventListener('copy', null);
+    });
+    document.execCommand('copy');
   }
 
 }
