@@ -204,7 +204,7 @@
   </div>
 </footer>
 
-<div class="modal fade" id="contactDeveloperModal" tabindex="-1" role="dialog"
+<div class="modal fade noselect" id="contactDeveloperModal" tabindex="-1" role="dialog"
   aria-labelledby="contactDeveloperModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -224,7 +224,7 @@
           <div class="row">
 
             <div class="col-md-7">
-              <a href="mailto:{{devEmail}}" (click)="copyToClickboard('emailAddress')">
+              <a class="t-color" href="mailto:{{devEmail}}" (click)="copyToClickboard('emailAddress')">
                 <p class="text-left">
                   <i class="fa fa-google repo-fa"></i> &nbsp;
                   <b>{{devEmail}}</b>
@@ -235,7 +235,7 @@
             </div>
 
             <div class="col-md-5 justify-content-center">
-              <a href="tel:{{devTel}}" (click)="copyToClickboard('mobileNumber')">
+              <a class="t-color" href="tel:{{devTel}}" (click)="copyToClickboard('mobileNumber')">
                 <p class="text-left">
                   <i class="fa fa-phone"></i> &nbsp;
                   <b>{{devTel}}</b>
