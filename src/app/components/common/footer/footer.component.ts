@@ -19,6 +19,7 @@ export class FooterComponent implements OnInit {
   agencyContactNumbers: string[] = []
   agencyFacebookPage: string = ''
   agencyTwitterProfile: string = ''
+  agencyTripAdivisor: string = ''
 
   tweetsMoments: string[] = []
   tweets: any[] = []
@@ -61,6 +62,8 @@ export class FooterComponent implements OnInit {
     this.agencyTwitterProfile = 'https://twitter.com/TamarindJourney'
 
     this.tweetsMoments = ['1091205378216325120', '1091205378216325120', '1091205378216325120']
+
+    this.agencyTripAdivisor = 'https://www.tripadvisor.com/Attraction_Review-g304138-d16819224-Reviews-Tamarind_Journeys-Kandy_Kandy_District_Central_Province.html'
 
   }
 

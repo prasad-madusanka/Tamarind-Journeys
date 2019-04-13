@@ -22,7 +22,7 @@ export class HomeSectionAComponent implements OnInit {
         "activeImage": "active",
         "src": "assets/img/carousel/1.jpg",
         "title": "Temple of Tooth Relic",
-        "content": "A buddhist temple located in the royal palace complex of the last administrative kingdom of ancient sri lanka, which houses the relic of the tooth of the loard buddha",
+        "content": "A buddhist temple located in the royal palace complex of the last administrative kingdom of ancient sri lanka, which houses the relic of the tooth of the lord buddha",
         "location": "Kandy, Sri Lanka"
       },
       {
