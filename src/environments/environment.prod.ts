@@ -88,5 +88,5 @@ export const environment = {
     { src: 'assets/img/gallery/wildlife/wd-5.jpg' },
     { src: 'assets/img/gallery/wildlife/wd-6.jpg' }],
 
-  GM_KEY: 'AIzaSyDf8gRlofjc3Wse-fq6rZVCvmBM_qHRHx8'
+  GM_KEY: ''
 };
